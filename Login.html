@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel = "stylesheet" href = "main.css" />
+    <script type="text/javascript" src="Cookies.js"></script>
+    <script type="text/javascript" src="JSON.js"></script>
+    <script type="text/javascript" src="Login.js"></script>
+
+
+
+    <title>Login</title>
+</head>
+<body>
+
+<div class="container" align="center">
+    <label><h4><b>Login</b></h4></label>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" id="name" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+    <button type="submit" onclick="login()">Login</button>
+</div>
+<label id="error_msg"></label>
+
+
+</body>
+</html>
