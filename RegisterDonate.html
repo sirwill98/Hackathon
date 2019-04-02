@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <title>Register to Donate</title>
 </head>
-<body>
+<script type="text/javascript" src="RegisterDonate.js"></script>
+<script>
+    function main()
+    {
+        document.getElementById("location").style.visibility = "hidden";
+        document.getElementById("attributes").style.visibility = "hidden";
+    }
+</script>
+<body onload="main()">
     <h2>Register to Donate</h2>
     <div class="Register">
-        <form>
-            <button onclick="DonateAge()">Are you aged between 16-30?</button>      
+        <button onclick="DonateAge()">Are you aged between 16-30?</button>
+        <br/>
+        <button onclick="DonateLocation()" id="location">Do you live in the UK?</button>
+        <br/>
+        <div class="attributes" style="display:none">
+            <input type="text" name="height_txt" id="height" placeholder="Height in CM">
             <br/>
-            <button onclick="DonateLocation()" hidden>Do you live in the UK?</button>
+            <input type="text" name="weight_txt" id="weight" placeholder="Weight in KG">
             <br/>
-            <button onclick="register()" hidden>Register</button>            
-            <br/>
-            <button onclick="register()" hidden>Register</button>            
-            <br/>
-        </form>
-        <button onclick="register()">Register</button>
-        <div id="success" style="display:none">
-            <a href="base.html">Registered successfully, Click here to login</a>
+            <button onclick="SubmitAttributes()" hidden>Submit</button>
         </div>
+        <button onclick="DonateRegister()" hidden>Register</button>
     </div>
 </body>
 </html>
