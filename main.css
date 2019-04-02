@@ -12,6 +12,18 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-size: 1rem;
+    background:linear-gradient(to bottom,whitesmoke, gray) ;
+}
+
+header {
+    background: linear-gradient(to bottom,green, grey) ;
+    background-size:100vw ;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: bolder;
+    line-height: 12vh;
+    font-size: 7vw;
+    text-align: center;
+    text-shadow: 3px 2px grey;
 }
 .form-table{
     margin-top: 25vh;
@@ -28,4 +40,80 @@ td {
     text-align: left;
     height: 5vh;
     vertical-align: bottom;
+}
+
+.collapsible {
+    position:absolute;
+    left:2%;
+    top: 3%;
+    background-color: lightseagreen;
+    color: white;
+    width: 13vw;
+    height: 7.5vh;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    outline:none;
+    border-radius: 0.5rem;
+
+
+}
+#dropdown{
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 7vw;
+    width:50%;
+    height: 100%;
+    color:antiquewhite;
+    background: linear-gradient(to bottom, green, black) ;
+}
+
+.center {
+    margin: 2.5rem;
+    width: 100%;
+}
+.center-buttons {
+
+    max-height: 75%;
+    max-width: 75%;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    height: auto;
+    width:auto;
+
+
+}
+
+.bottombutton {
+
+    background-color: silver;
+    color: white;
+    padding: 1rem 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vw;
+    outline:none;
+    width: 19.4vw;
+
+}
+.account{
+    background-color:lightseagreen;
+    border-radius: 50%;
+    font-size: 7vw;
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+    width: 12%;
+    height:7%;
+
+}
+.sidebar{
+    font-size: 1.5rem;
+    background: whitesmoke;
 }
