@@ -97,13 +97,6 @@ span.psw {
     border-right: none; /* Prevent double borders */
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-    background-color: #3e8e41;
-    margin-left: 15vw;
-
-}
-
 table {
 }
 
