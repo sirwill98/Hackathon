@@ -20,17 +20,30 @@
             background-color: #555;
         }
 
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
         .content {
             padding: 0 18px;
-            display: none;
+            max-height: 0;
             overflow: hidden;
+            transition: max-height 0.2s ease-out;
             background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
 
-    <h2>Anothony Nolan</h2>
+    <h2>Anothony Nolan - Info</h2>
     <button class="collapsible">We are Anthony Nolan</button>
     <div class="content">
         <p>Every day, we match incredible individuals willing to donate their blood stem cells or bone marrow to people with blood cancer and blood disorders who desperately need lifesaving transplants.</p>
@@ -40,7 +53,7 @@
         <p>Now, we help three people each day find that lifesaving match.</p>
         <img src="Images/infoImage1.jpg">
     </div>
-    <button class="collapsible">Open Section 2</button>
+    <button class="collapsible">An extraordinary journey </button>
     <div class="content">
         <p>It all starts with someone being ready and waiting to help. And thanks to the generosity of our donors, the new mums, the great minds in our labs, and the selflessness of our supporters, it can end with someone’s life being saved.</p>
         <table>
@@ -60,9 +73,23 @@
             </tr>
         </table>
     </div>
-    <button class="collapsible">Open Section 3</button>
+    <button class="collapsible">Our Research</button>
     <div class="content">
-        <p></p>
+        <p>We conduct world-class research into stem cell matching and transplants, so we can make sure every person in need gets the best possible treatment.</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/infoImage2.jpg">
+                    <h2>Third-generation sequencing</h2>
+                    <p>We have recently launched our new third-generation sequencing (TGS) in our SMARTLAB® – a revolution in lifesaving technology.</p>
+                </td>
+                <td>
+                    <img src="Images/infoImage3.jpg">
+                    <h2>Services for transplant centres</h2>
+                    <p>We can help you find blood stem cell and bone marrow donors, with our register of over 600,000 donors.</p>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <script type="text/javascript" src="Info.js"></script>
