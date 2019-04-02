@@ -12,31 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-
+    <script type="text/javascript" src="Register.js"></script>
+    <script type="text/javascript" src="Cookies.js"></script>
+    <script type="text/javascript" src="JSON.js"></script>
     <title>Register</title>
     <header><button class="collapsible">&nbsp;≡&nbsp;</button>
         <button class="account"><i class="fa fa-user"></i></button>
 
 
-       <h1>&nbsp;&nbsp;Register </h1> </header>
+        <h1>&nbsp;&nbsp;Register </h1> </header>
 
     <div class="form">
         <table class="form-table">
             <tr>
                 <td> Name : </td>
-                <td><input   ></input></td>
+                <td><input id="name" ></input></td>
+            </tr>
+            <tr>
+                <td> Number : </td>
+                <td><input id="number" ></input></td>
             </tr>
             <tr>
                 <td> Email: </td>
-                <td><input  ></input></td>
+                <td><input id="email" ></input></td>
             </tr>
             <tr>
                 <td> Password: </td>
-                <td><input  ></input></td>
+                <td><input id="password" ></input></td>
             </tr>
             <tr>
                 <td> Confirm Password: </td>
-                <td><input  ></input></td>
+                <td><input id="passwordConf" ></input></td>
             </tr>
 
 
@@ -48,26 +54,26 @@
     </div>
 
     <div id="dropdown" class="dropdown">
-            <br>
+        <br>
 
-            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+        <button class="sidebar"><i class="fa fa-home"></i>Home</button>
 
-            <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
-
-
-            <!--TODO socials-->
-
-            <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+        <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
 
 
-            <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+        <!--TODO socials-->
 
-            <button class="sidebar"><i class="fa fa-info"></i> Info</button>
-
-            <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
 
 
-        </div>
+        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+        <button class="sidebar"><i class="fa fa-info"></i> Info</button>
+
+        <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+    </div>
 
     <br><br>
     <button id="register" class="center">Register</button>
