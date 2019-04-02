@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
+    <link rel="apple-touch-icon" href="anlogo.jpeg" />
+    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
+
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <title>Register to Donate</title>
+
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+        <button class="account"><i class="fa fa-user"></i></button>
+
+
+        &nbsp;&nbsp;Register to Donate
+    </header>
+
+</head>
+<script type="text/javascript" src="RegisterDonate.js"></script>
+<script>
+    function main()
+    {
+        document.getElementById("LocationLabel").style.visibility = "hidden";
+        document.getElementById("AttributesLabel").style.visibility = "hidden";
+
+        document.getElementById("AgeSuccess").style.visibility = "hidden";
+        document.getElementById("AgeFailure").style.visibility = "hidden";
+
+        document.getElementById("Location").style.visibility = "hidden";
+        document.getElementById("LocationSuccess").style.visibility = "hidden";
+        document.getElementById("LocationFailure").style.visibility = "hidden";
+
+        document.getElementById("Attributes").style.visibility = "hidden";
+    }
+</script>
+<body onload="main()">
+
+    <div class="container" align="center">
+        <label><br>Step 2 of 8</label>
+
+        <div>
+            <h3>YOUR GENERAL HEALTH</h3>
+            Your health is our top priority, so please answer the following questions to the best of your ability so we can see how you can help.
+        </div>
+
+        <br/>
+
+        <div id="HealthLabel">
+            <label><b>Have you or your partner ever had a positive result for HIV, HTLV, Hepatitis B or Hepatitis C?</b></label>
+        </div>
+        <div id="Health" class="Health" align="center">
+            <div class="btn-group">
+                <button onclick="HealthOK()" id="HealthYes">Yes</button>
+                <button onclick="HealthNOTOK()" id="HealthNo">No</button>
+            </div>
+        </div>
+
+        <div id="NotHealthy" class="Health" align="center">
+            <label style="border-style: groove">We’re sorry, we can’t put you on the register if you (or your partner) think you might be HIV or HTLV positive, or carrying the Hepatitis B or C virus. But don’t worry, there are many other ways you can help. </label>
+        </div>
+
+        <div id="Healthy" class="Health" align="center">
+            <label style="border-style: groove">ANSWERED NO</label>
+        </div>
+
+        <br/>
+
+        <div id="DrugsLabel">
+            <label><b>Have you ever been injected with non-prescription drugs, including body-building drugs (includes one off use)?</b></label>
+        </div>
+
+        <div id="Drugs" class="Drugs" align="center">
+            <div class="btn-group">
+                <button onclick="DonateLocationYes()" id="locationYes">Yes</button>
+                <button onclick="DonateLocationNo()" id="locationNo">No</button>
+            </div>
+        </div>
+
+        <div id="DrugsYes" class="Drugs" align="center">
+            <label style="border-style: groove">We’re sorry - our donors can’t have been injected with non-prescription drugs, including body-building drugs (not even once). But don’t worry, there are many other ways you can help. </label>
+        </div>
+
+        <div id="DrugsNO" class="Drugs" align="center">
+            <label style="border-style: groove">ANSWERED NO</label>
+        </div>
+
+        <br/>
+
+        <div id="MedicalConditionalLabel">
+            <label><b>Have you ever been diagnosed with any of the following medical conditions?</b></label>
+        </div>
+
+        <div id="Drugs" class="Drugs" align="center">
+            <div class="btn-group">
+                <button onclick="DonateLocationYes()" id="locationYes">Yes</button>
+                <button onclick="DonateLocationNo()" id="locationNo">No</button>
+            </div>
+        </div>
+
+        <div id="DrugsYes" class="Drugs" align="center">
+            <label style="border-style: groove">We’re sorry - our donors can’t have been injected with non-prescription drugs, including body-building drugs (not even once). But don’t worry, there are many other ways you can help. </label>
+        </div>
+
+        <div id="DrugsNO" class="Drugs" align="center">
+            <label style="border-style: groove">ANSWERED NO</label>
+        </div>
+
+
+        <!--<button onclick="DonateRegister()" hidden>Register</button>-->
+    </div>
+
+</body>
+</html>

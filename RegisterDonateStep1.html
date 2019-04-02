@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
+    <link rel="apple-touch-icon" href="anlogo.jpeg" />
+    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
+
     <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <title>Register to Donate</title>
+
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+        <button class="account"><i class="fa fa-user"></i></button>
+
+
+        &nbsp;&nbsp;Register to Donate
+    </header>
+
 </head>
 <script type="text/javascript" src="RegisterDonate.js"></script>
 <script>
@@ -22,13 +38,21 @@
         document.getElementById("LocationSuccess").style.visibility = "hidden";
         document.getElementById("LocationFailure").style.visibility = "hidden";
 
+
         document.getElementById("Attributes").style.visibility = "hidden";
     }
 </script>
 <body onload="main()">
 
     <div class="container" align="center">
-        <label><h3><b>Register to Donate</b></h3></label>
+        <label><br>Step 1 of 8</label>
+
+        <div>
+            <h3>YOUR APPLICATION STARTS HERE</h3>
+            The first step to joining the register, is answering some questions. One simple form for you, one giant leap for lifesaving!
+        </div>
+
+        <br/>
 
         <div id="AgeLabel">
             <label><b>Are you aged between 16-30?</b></label>
@@ -72,20 +96,17 @@
         <br/>
 
         <div id="AttributesLabel">
-            <label><b>Are you aged between 16-30?</b></label>
+            <label><b>Height & Weight</b></label>
         </div>
         <div id="Attributes" class="Attributes" align="center">
-            <label><b>Height & Weight</b></label>
             <div>
                 <input type="number" name="height_txt" min="140" max="210" id="height" placeholder="Height in CM">
                 <br/>
                 <input type="number" name="weight_txt" min="50" max="125" id="weight" placeholder="Weight in KG">
                 <br/>
-                <button onclick="SubmitAttributes()" hidden>Submit</button>
+                <button onclick="SubmitAttributes()" hidden>Continue</button>
             </div>
         </div>
-
-        <!--<button onclick="DonateRegister()" hidden>Register</button>-->
     </div>
 
 </body>

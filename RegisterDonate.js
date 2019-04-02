@@ -16,6 +16,7 @@ function DonateLocationYes()
 {
     document.getElementById("Location").style.visibility = "hidden";
     document.getElementById("LocationSuccess").style.visibility = "visible";
+    document.getElementById("AttributesLabel").style.visibility = "visible";
     document.getElementById("Attributes").style.visibility = "visible";
 }
 
