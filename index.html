@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
+    <link rel="apple-touch-icon" href="anlogo.jpeg" />
+    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
+
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
+    <title>Anthony Nolan</title>
+
 </head>
 <body>
 
+<header><button class="collapsible">&nbsp;≡&nbsp;</button>
+
+    &nbsp;&nbsp;Anthony Nolan </header>
+<main>
+
+
+    <button class="account"><i class="fa fa-user"></i></button>
+
+    <div id="dropdown" class="dropdown">
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
+
+
+        <br><br>
+        <!--TODO socials-->
+
+        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-info"></i> Info</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+    </div>
+
+
+    <script>
+
+
+
+        //collapsible menu
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content =document.getElementById("dropdown");
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+
+    </script>
+</main>
+<footer></footer>
+
+<script>
+
+</script>
 </body>
 </html>
