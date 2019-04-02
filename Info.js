@@ -1,3 +1,5 @@
+"use strict";
+
 var coll = document.getElementsByClassName("infoCollapsible");
 var i;
 
@@ -12,3 +14,18 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
+
+function displayNotification() {
+    if (Notification.permission === 'granted') {
+        navigator.serviceWorker.register('empty.js');
+        navigator.serviceWorker.ready.then(function (reg) {
+            reg.showNotification('Hello world!');
+        });
+    }
+}
+
+setInterval(displayNotification, 3000);
