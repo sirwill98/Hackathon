@@ -1,4 +1,4 @@
-function register()
+function RegisterUser()
 {
     var name = document.getElementById("name");
     var email = document.getElementById("email");
@@ -7,6 +7,7 @@ function register()
 
     if(password === passwordConf)
     {
-
+        var user = {name:name, email:email, password:password};
+        RegisterJSON(user);
     }
 }
