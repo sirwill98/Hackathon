@@ -13,7 +13,19 @@ html, body {
     overflow: hidden;
     font-size: 1rem;
 }
-.form{
+.form-table{
     margin-top: 25vh;
-    margin-left: 20vw;
+    margin-left: 15vw;
+
+}
+
+table {
+}
+
+td {
+    width: 15vw;
+    padding: 1rem;
+    text-align: left;
+    height: 5vh;
+    vertical-align: bottom;
 }
