@@ -12,16 +12,16 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-size: 1rem;
-    background:linear-gradient(to bottom,whitesmoke, gray) ;
+    background: linear-gradient(to right,lightgrey,white);
 }
 
 header {
-    background: linear-gradient(to bottom,green, grey) ;
+    background-image: url("green bg2.png");
     background-size:100vw ;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-weight: bolder;
     line-height: 12vh;
-    font-size: 7vw;
+    font-size: 8vw;
     text-align: center;
     text-shadow: 3px 2px grey;
 }
@@ -46,7 +46,7 @@ td {
     position:absolute;
     left:2%;
     top: 3%;
-    background-color: lightseagreen;
+    background-color: #441cc9;
     color: white;
     width: 13vw;
     height: 7.5vh;
@@ -69,7 +69,7 @@ td {
     width:50%;
     height: 100%;
     color:antiquewhite;
-    background: linear-gradient(to bottom, green, black) ;
+    background:linear-gradient(to right,green, greenyellow) ;
 }
 
 .center {
@@ -103,7 +103,7 @@ td {
 
 }
 .account{
-    background-color:lightseagreen;
+    background-color:#441cc9;
     border-radius: 50%;
     font-size: 7vw;
     position: absolute;
