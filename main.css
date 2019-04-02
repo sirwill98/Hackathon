@@ -132,7 +132,7 @@ td {
 
 }
 #dropdown{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 12vh;
     padding: 0 18px;
