@@ -2,21 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel = "stylesheet" href = "toolkit.css" />
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
     <title>Title</title>
-</head>
+   <button class="collapsible">&nbsp;≡&nbsp;</button>
+
 <body>
 
-<header>Chat Room</header>
+<header><button class="collapsible">&nbsp;≡&nbsp;</button>
+    <button class="account"><i class="fa fa-user"></i></button>
+
+
+    <h1>&nbsp;&nbsp;Chat </h1> </header>
 <main>
     <div id="previousMessages"></div>
     <div id="input">
         <input type="text" id="message"/>
-        <input type="button" id="sendButton" value="Send">
+        <input type="button" class="center" id="sendButton" value="Send">
     </div>
 
 </main>
 
 <script src="ChatRoom.js" type="text/javascript"></script>
+
+<div id="dropdown" class="dropdown">
+    <br>
+
+    <button class="sidebar" onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
+
+    <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+
+
+    <!--TODO socials-->
+
+    <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+
+
+    <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+
+    <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+</div>
+<script>
+
+
+
+    //collapsible menu
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content =document.getElementById("dropdown");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+
+</script>
 
 </body>
 </html>

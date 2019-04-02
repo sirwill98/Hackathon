@@ -204,3 +204,21 @@ td {
     margin-right:  5vw;
     margin-top : 5vw;
 }
+#previousMessages{
+
+}
+#message{
+    border:3px; border-style:solid; border-color:forestgreen; padding: 1em;
+}
+.messageLeft {
+    alignment: left;
+    color: red;
+}
+
+.messageRight {
+    position: absolute;
+    right: 0;
+    width: 15rem;
+}
+
+

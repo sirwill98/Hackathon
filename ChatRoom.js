@@ -14,7 +14,11 @@ function displayMessages(){
     }
 
     for(var i = 0; i < messages.length; i++){
-        var messageHTML = "<span class='message'>"+messages[i].user +"<br>"+ messages[i].message+"</span> <br> <br>";
+        if(messages[i].user === 'user1'){
+            var messageHTML = "<span class='messageRight' >"+messages[i].user +"<br>"+ messages[i].message+"</span> <br> <br>";
+        } else {
+            var messageHTML = "<span class='messageLeft' >"+messages[i].user +"<br>"+ messages[i].message+"</span> <br> <br>";
+        }
         previousMessages.innerHTML = previousMessages.innerHTML + messageHTML;
     }
 }
