@@ -10,14 +10,19 @@
 }
 body{
     background: #f1f1f1;
+    margin-top: 12vh;
+    margin-bottom: 7rem;
 
 }
 
 
 
 header {
+    top:0;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
     background: #999;
-
     text-align: center;
 }
 footer{
@@ -50,8 +55,8 @@ td {
 
 .collapsible {
     position:absolute;
-    left:2%;
-    top: 3%;
+    left:4%;
+    top: 0.5rem;
     background-color: #899c1c;
     color: white;
     width: 13vw;
@@ -67,7 +72,7 @@ td {
 #dropdown{
     position: absolute;
     left: 0;
-    top: 11vh;
+    top: 12vh;
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -115,7 +120,7 @@ td {
     font-size: 5vw;
     position: absolute;
     right: 6vw;
-    top: 3vh;
+    top: 1vh;
     width: 12%;
     height:7%;
     text-align: center;
