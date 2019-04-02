@@ -6,7 +6,16 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
     <title>Register</title>
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+        <button class="account"><i class="fa fa-user"></i></button>
+
+
+        &nbsp;&nbsp;Anthony Nolan </header>
 
     <div class="form">
         <table class="form-table">
@@ -32,7 +41,63 @@
 
 
         </table>
+
     </div>
+
+    <div id="dropdown" class="dropdown">
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
+
+
+            <br><br>
+            <!--TODO socials-->
+
+            <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-info"></i> Info</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+        </div>
+
+    <br><br>
+    <button id="register" class="submit" >Register</button>
+
+    <script>
+
+
+
+        //collapsible menu
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content =document.getElementById("dropdown");
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+
+    </script>
 </head>
 <body>
 
