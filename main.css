@@ -29,6 +29,15 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -37,6 +46,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    display:inline-block;
 }
 
 button:hover {
@@ -53,4 +63,29 @@ button:hover {
 span.psw {
     float: right;
     padding-top: 16px;
+}
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
 }

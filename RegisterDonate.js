@@ -1,11 +1,30 @@
-function DonateAge()
+function DonateAgeYes()
 {
-    document.getElementById("location").style.visibility = "visible";
+    document.getElementById("Age").style.visibility = "hidden";
+    document.getElementById("AgeSuccess").style.visibility = "visible";
+    document.getElementById("LocationLabel").style.visibility = "visible";
+    document.getElementById("Location").style.visibility = "visible";
 }
-function DonateLocation()
+
+function DonateAgeNo()
 {
-    document.getElementById("attributes").style.visibility = "visible";
+    document.getElementById("Age").style.visibility = "hidden";
+    document.getElementById("AgeFailure").style.visibility = "visible";
 }
+
+function DonateLocationYes()
+{
+    document.getElementById("Location").style.visibility = "hidden";
+    document.getElementById("LocationSuccess").style.visibility = "visible";
+    document.getElementById("Attributes").style.visibility = "visible";
+}
+
+function DonateLocationNo()
+{
+    document.getElementById("Location").style.visibility = "hidden";
+    document.getElementById("LocationFailure").style.visibility = "visible";
+}
+
 function SubmitAttributes()
 {
 
