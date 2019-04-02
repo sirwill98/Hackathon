@@ -1,9 +1,10 @@
 function RegisterUser()
 {
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
-    var passwordConf = document.getElementById("passwordConf");
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var passwordConf = document.getElementById("passwordConf").value;
+    console.log("test");
 
     if(password === passwordConf)
     {
