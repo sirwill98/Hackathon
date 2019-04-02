@@ -2,53 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel = "stylesheet" href = "main.css" />
+
+
+
     <title>Login</title>
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        form {border: 3px solid #f1f1f1;}
-
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .container {
-            padding: 16px;
-            width:1000px;
-            margin: auto;
-            border: 3px solid #73AD21;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-    </style>
 </head>
 <body>
 
-<h1>Login</h1>
-
 <form action="action_page.php">
     <div class="container" align="center">
+        <label><h4><b>Login</b></h4></label>
         <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -57,8 +24,6 @@
 
         <button type="submit">Login</button>
     </div>
-
-
 </form>
 
 
