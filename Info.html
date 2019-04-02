@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Lifesavers - Info</title>
     <style>
-        .collapsible {
-            background-color: #777;
+        .infoCollapsible {
+            background-color: lightseagreen;
             color: white;
             cursor: pointer;
             padding: 18px;
@@ -16,11 +16,11 @@
             font-size: 15px;
         }
 
-        .active, .collapsible:hover {
+        .infoCollapsible.active, .infoCollapsible:hover {
             background-color: #555;
         }
 
-        .collapsible:after {
+        .infoCollapsible:after {
             content: '\002B';
             color: white;
             font-weight: bold;
@@ -28,7 +28,7 @@
             margin-left: 5px;
         }
 
-        .active:after {
+        .infoCollapsible.active:after {
             content: "\2212";
         }
 
@@ -40,11 +40,75 @@
             background-color: #f1f1f1;
         }
     </style>
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
 </head>
 <body>
+<main>
 
-    <h2>Anothony Nolan - Info</h2>
-    <button class="collapsible">We are Anthony Nolan</button>
+
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+
+        &nbsp;&nbsp;Anthony Nolan </header>
+    <main>
+        <button class="account"><i class="fa fa-user"></i></button>
+
+        <div id="dropdown" class="dropdown">
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
+
+
+            <br><br>
+            <!--TODO socials-->
+
+            <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-info"></i> Info</button>
+
+            <br><br>
+
+            <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+        </div>
+
+
+        <script>
+
+
+
+            //collapsible menu
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content =document.getElementById("dropdown");
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+
+
+        </script>
+    </main>
+    <button class="infoCollapsible">We are Anthony Nolan</button>
     <div class="content">
         <p>Every day, we match incredible individuals willing to donate their blood stem cells or bone marrow to people with blood cancer and blood disorders who desperately need lifesaving transplants.</p>
         <p></p>
@@ -53,7 +117,7 @@
         <p>Now, we help three people each day find that lifesaving match.</p>
         <img src="Images/infoImage1.jpg">
     </div>
-    <button class="collapsible">An extraordinary journey </button>
+    <button class="infoCollapsible">An extraordinary journey </button>
     <div class="content">
         <p>It all starts with someone being ready and waiting to help. And thanks to the generosity of our donors, the new mums, the great minds in our labs, and the selflessness of our supporters, it can end with someone’s life being saved.</p>
         <table>
@@ -73,7 +137,7 @@
             </tr>
         </table>
     </div>
-    <button class="collapsible">Our Research</button>
+    <button class="infoCollapsible">Our Research</button>
     <div class="content">
         <p>We conduct world-class research into stem cell matching and transplants, so we can make sure every person in need gets the best possible treatment.</p>
         <table>
@@ -93,6 +157,6 @@
     </div>
 
     <script type="text/javascript" src="Info.js"></script>
-
+    <a class="twitter-timeline" data-width="600" data-height="800" data-theme="light" href="https://twitter.com/AnthonyNolan?ref_src=twsrc%5Etfw">Tweets by AnthonyNolan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
