@@ -27,8 +27,8 @@ header {
     text-shadow: 3px 2px grey;
 }
 .form-table{
-    margin-top: 25vh;
-    margin-left: 20vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
     border: 3px solid #f1f1f1;
 }
 
@@ -182,4 +182,14 @@ td {
 .sidebar{
     font-size: 1.5rem;
     background: whitesmoke;
+}
+.submit{
+    margin-left: 45vw;
+    font-size: 1rem;
+
+}
+#faqs{
+    margin-left: 5vw;
+    margin-right:  5vw;
+    margin-top : 5vw;
 }
