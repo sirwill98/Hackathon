@@ -38,17 +38,18 @@
         document.getElementById("LocationSuccess").style.visibility = "hidden";
         document.getElementById("LocationFailure").style.visibility = "hidden";
 
-
         document.getElementById("Attributes").style.visibility = "hidden";
+
+        document.getElementById("ContinueToStep2").style.visibility = "hidden";
     }
 </script>
 <body onload="main()">
 
     <div class="container" align="center">
-        <label><br>Step 1 of 8</label>
+        <label>Step 1 of 8</label>
 
         <div>
-            <h3>YOUR APPLICATION STARTS HERE</h3>
+            <h4>YOUR APPLICATION STARTS HERE</h4>
             The first step to joining the register, is answering some questions. One simple form for you, one giant leap for lifesaving!
         </div>
 
@@ -104,7 +105,7 @@
                 <br/>
                 <input type="number" name="weight_txt" min="50" max="125" id="weight" placeholder="Weight in KG">
                 <br/>
-                <button onclick="SubmitAttributes()" hidden>Continue</button>
+                <button onclick="ContinueToStep2()">Continue</button>
             </div>
         </div>
     </div>

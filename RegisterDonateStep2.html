@@ -28,26 +28,29 @@
 <script>
     function main()
     {
-        document.getElementById("LocationLabel").style.visibility = "hidden";
-        document.getElementById("AttributesLabel").style.visibility = "hidden";
+        document.getElementById("DrugsLabel").style.visibility = "hidden";
+        document.getElementById("MedicalConditionsLabel").style.visibility = "hidden";
 
-        document.getElementById("AgeSuccess").style.visibility = "hidden";
-        document.getElementById("AgeFailure").style.visibility = "hidden";
+        document.getElementById("NotHealthy").style.visibility = "hidden";
+        document.getElementById("Healthy").style.visibility = "hidden";
 
-        document.getElementById("Location").style.visibility = "hidden";
-        document.getElementById("LocationSuccess").style.visibility = "hidden";
-        document.getElementById("LocationFailure").style.visibility = "hidden";
+        document.getElementById("Drugs").style.visibility = "hidden";
+        document.getElementById("TakenDrugs").style.visibility = "hidden";
+        document.getElementById("NoDrugs").style.visibility = "hidden";
 
-        document.getElementById("Attributes").style.visibility = "hidden";
+        document.getElementById("MedicalConditions").style.visibility = "hidden";
+        document.getElementById("ConditionsOK").style.visibility = "hidden";
+        document.getElementById("ConditionsNotOK").style.visibility = "hidden";
+        document.getElementById("ContinueToStep3").style.visibility = "hidden";
     }
 </script>
 <body onload="main()">
 
     <div class="container" align="center">
-        <label><br>Step 2 of 8</label>
+        <label>Step 2 of 8</label>
 
         <div>
-            <h3>YOUR GENERAL HEALTH</h3>
+            <h4>YOUR GENERAL HEALTH</h4>
             Your health is our top priority, so please answer the following questions to the best of your ability so we can see how you can help.
         </div>
 
@@ -58,8 +61,8 @@
         </div>
         <div id="Health" class="Health" align="center">
             <div class="btn-group">
-                <button onclick="HealthOK()" id="HealthYes">Yes</button>
-                <button onclick="HealthNOTOK()" id="HealthNo">No</button>
+                <button onclick="HealthNotOK()" id="HealthYes">Yes</button>
+                <button onclick="HealthOK()" id="HealthNo">No</button>
             </div>
         </div>
 
@@ -79,42 +82,70 @@
 
         <div id="Drugs" class="Drugs" align="center">
             <div class="btn-group">
-                <button onclick="DonateLocationYes()" id="locationYes">Yes</button>
-                <button onclick="DonateLocationNo()" id="locationNo">No</button>
+                <button onclick="DrugsYes()" id="DrugsYes">Yes</button>
+                <button onclick="DrugsNo()" id="DrugsNO">No</button>
             </div>
         </div>
 
-        <div id="DrugsYes" class="Drugs" align="center">
+        <div id="TakenDrugs" class="Drugs" align="center">
             <label style="border-style: groove">We’re sorry - our donors can’t have been injected with non-prescription drugs, including body-building drugs (not even once). But don’t worry, there are many other ways you can help. </label>
         </div>
 
-        <div id="DrugsNO" class="Drugs" align="center">
+        <div id="NoDrugs" class="Drugs" align="center">
             <label style="border-style: groove">ANSWERED NO</label>
         </div>
 
         <br/>
 
-        <div id="MedicalConditionalLabel">
+        <div id="MedicalConditionsLabel">
             <label><b>Have you ever been diagnosed with any of the following medical conditions?</b></label>
+
+            <ul>
+                <li>A severe allergy to latex or anaesthetic</li>
+                <li>Cancer</li>
+                <li>Certain autoimmune diseases, including: </li>
+                    <ul>
+                        <li>Any vasculitis</li>
+                        <li>Ankylosing spondylitis</li>
+                        <li>Crohn’s disease</li>
+                        <li>Multiple sclerosis</li>
+                        <li>Myasthenia gravis</li>
+                        <li>Rheumatoid arthritis</li>
+                        <li>Sarcoidosis</li>
+                        <li>Systemic lupus erythematosus (SLE)</li>
+                        <li>Ulcerative colitis</li>
+                    </ul>
+                <li>Coronary artery disease (blocked arteries in the heart, angina, heart attack), heart failure, bypass surgery or heart valve replacement</li>
+                <li>Diabetes (unless controlled by diet alone)</li>
+                <li>Emphesema/ COPD</li>
+                <li>Epilepsy (unless you have been free of seizures and off medications for epilepsy for the last 12 months)</li>
+                <li>Haemophilia or other bleeding disorder</li>
+                <li>Pulmonary embolism (blood clot on the lung)</li>
+                <li>Schizophrenia</li>
+                <li>Sickle cell disease (sickle cell trait is acceptable)</li>
+                <li>Stroke</li>
+                <li>Thalassaemia (thalassaemia trait may be acceptable)</li>
+            </ul>
         </div>
 
-        <div id="Drugs" class="Drugs" align="center">
+        <div id="MedicalConditions" class="MedicalConditions" align="center">
             <div class="btn-group">
-                <button onclick="DonateLocationYes()" id="locationYes">Yes</button>
-                <button onclick="DonateLocationNo()" id="locationNo">No</button>
+                <button onclick="MedicalConditionsYes()" id="Diagnosed">Yes</button>
+                <button onclick="MedicalConditionsNo()" id="NotDiagnosed ">No</button>
             </div>
         </div>
 
-        <div id="DrugsYes" class="Drugs" align="center">
-            <label style="border-style: groove">We’re sorry - our donors can’t have been injected with non-prescription drugs, including body-building drugs (not even once). But don’t worry, there are many other ways you can help. </label>
+        <div id="ConditionsNotOK" class="MedicalConditions" align="center">
+            <label style="border-style: groove">We’re sorry - you have, or you’ve had, a health condition which means we can’t add you to our register. But don’t worry, there are many other ways you can help. </label>
         </div>
 
-        <div id="DrugsNO" class="Drugs" align="center">
+        <div id="ConditionsOK" class="MedicalConditions" align="center">
             <label style="border-style: groove">ANSWERED NO</label>
         </div>
 
-
-        <!--<button onclick="DonateRegister()" hidden>Register</button>-->
+        <div id="ContinueToStep3" class="Continue" align="ceneter">
+            <button onclick="ContinueToStep3()" id="Continue">Continue</button>
+        </div>
     </div>
 
 </body>
