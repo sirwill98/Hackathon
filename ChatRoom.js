@@ -25,7 +25,6 @@ function sendMessage(message){
         displayMessages();
         document.getElementById("message").value = "";
     }
-
 }
 
 function initChat(){
