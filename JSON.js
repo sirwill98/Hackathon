@@ -1,6 +1,6 @@
 function RegisterJSON(user)
 {
-    if(localStorage.getItem("user.name"))
+    if(localStorage.getItem("user.email"))
     {
 
     }
