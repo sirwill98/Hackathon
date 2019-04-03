@@ -28,7 +28,7 @@ function displayMessages(){
     for(var i = 0; i < messages.length; i++){
         var messageHTML;
         if(messages[i].user === 'user1'){
-            messageHTML = "<span class='messageRight' >"+messages[i].user +"<br>"+ messages[i].message+"</span> <br> <br>";
+            messageHTML = "<span class='messageRight' ><br>"+ messages[i].message+"</span> <br> <br>";
         } else {
             messageHTML = "<span class='messageLeft' >"+messages[i].user +"<br>"+ messages[i].message+"</span> <br> <br>";
         }
