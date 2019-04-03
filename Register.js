@@ -25,13 +25,13 @@ function RegisterUser()
             {
                 if(RegisterJSON(user) === false)
                 {
-                    document.getElementById("error_lbl").innerText = "A user with this username already exists";
+                    document.getElementById("error_lbl").innerText = "A user with this email already exists";
                 }
             }
         }
     }
     else
     {
-        document.getElementById("error_lbl").innerText = "passwords do not match";
+        document.getElementById("error_lbl").innerText = "Passwords do not match";
     }
 }

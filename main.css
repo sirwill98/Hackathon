@@ -303,7 +303,7 @@ span.psw {
     max-width: 100vw;
 }
 
-#register{
+.submit{
     left:35vw;
     background-color: #899c1c; /* Green background */
     color: white; /* White text */
