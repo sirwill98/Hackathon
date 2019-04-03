@@ -16,3 +16,6 @@ function init() {
         });
     }
 }
+function goToProfile(){
+    window.open("UserAccountPage.html", "_self");
+}
