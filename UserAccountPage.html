@@ -24,19 +24,19 @@
     <h1>&nbsp;&nbsp;Profile</h1>
 </header>
 <div class="container">
-<main>
-    <div id="AccountInformation">
-        <div id="dropdownNav" class="dropdown">
-            <br>
-            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
-            <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
-            <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-            <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
-            <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
-            <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
-            <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
-        </div>
 
+<main>
+    <div id="dropdown" class="dropdown">
+        <br>
+        <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+        <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
+        <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+        <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+        <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
+        <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+        <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
+    </div>
+    <div id="AccountInformation">
         <div id="info">
             <h3 id="name">Name: </h3>
             <h4 id="age">Age: </h4>
@@ -81,51 +81,8 @@
 
     <button class="account"><i class="fa fa-user"></i></button>
 
-    <div id="dropdown" class="dropdown">
-        <br><br>
-
-        <button class="sidebar"><i class="fa fa-home"></i>Home</button>
-        <br><br>
-
-        <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
-
-
-        <br><br>
-        <!--TODO socials-->
-
-        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
-
-        <br><br>
-
-        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
-
-        <br><br>
-
-        <button class="sidebar"><i class="fa fa-info"></i> Info</button>
-
-        <br><br>
-
-        <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
-    </div>
 </main>
 </div>
-<script>
-    //collapsible menu
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content =document.getElementById("dropdown");
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-</script>
 </body>
 <script type="text/javascript" src="main.js"></script>
 
