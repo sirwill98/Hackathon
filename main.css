@@ -12,6 +12,8 @@ body{
     background: #f1f1f1;
     margin-top: 12vh;
     margin-bottom: 7rem;
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -76,12 +78,6 @@ button:hover {
     opacity: 0.8;
 }
 
-.container {
-    padding: 16px;
-    margin: auto;
-    border: 3px solid #93aa1f;
-    max-width: 88vw;
-}
 
 span.psw {
     float: right;
@@ -106,6 +102,13 @@ span.psw {
     content: "";
     clear: both;
     display: table;
+    max-width: 88vw;
+}
+.content{
+    max-width: 88vw;
+}
+.display-table{
+    max-width: 80vw;
 }
 
 .btn-group button:not(:last-child) {
@@ -238,9 +241,9 @@ button:hover {
 
 .container {
     padding: 16px;
-    width:500px;
     margin: auto;
     border: 3px solid #93aa1f;
+    max-width: 88vw;
 }
 
 span.psw {
