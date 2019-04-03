@@ -11,14 +11,14 @@
     <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
 
     <link rel = "stylesheet" href = "main.css" />
+    <link rel = "stylesheet" href = "toolkit.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <title>Register to Donate</title>
 
-    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
-        <button class="account"><i class="fa fa-user"></i></button>
-        &nbsp;&nbsp;Register to Donate
+    <header>
+        <h1>&nbsp;&nbsp;Register to Donate</h1>
     </header>
 
 </head>
@@ -57,10 +57,10 @@
         <div id="HealthLabel">
             <label><b>Have you or your partner ever had a positive result for HIV, HTLV, Hepatitis B or Hepatitis C?</b></label>
         </div>
-        <div id="Health" class="Health" align="center">
+        <div id="Health" class="Health" >
             <div class="btn-group">
-                <button onclick="HealthNotOK()" id="HealthYes">Yes</button>
-                <button onclick="HealthOK()" id="HealthNo">No</button>
+                <button class="btn-group" onclick="HealthNotOK()" id="HealthYes">Yes</button>
+                <button class="btn-group" onclick="HealthOK()" id="HealthNo">No</button>
             </div>
         </div>
 
@@ -80,8 +80,8 @@
 
         <div id="Drugs" class="Drugs" align="center">
             <div class="btn-group">
-                <button onclick="DrugsYes()" id="DrugsYes">Yes</button>
-                <button onclick="DrugsNo()" id="DrugsNO">No</button>
+                <button class="btn-group" onclick="DrugsYes()" id="DrugsYes">Yes</button>
+                <button class="btn-group" onclick="DrugsNo()" id="DrugsNO">No</button>
             </div>
         </div>
 
@@ -128,8 +128,8 @@
 
         <div id="MedicalConditions" class="MedicalConditions" align="center">
             <div class="btn-group">
-                <button onclick="MedicalConditionsYes()" id="Diagnosed">Yes</button>
-                <button onclick="MedicalConditionsNo()" id="NotDiagnosed ">No</button>
+                <button class="btn-group" onclick="MedicalConditionsYes()" id="Diagnosed">Yes</button>
+                <button class="btn-group" onclick="MedicalConditionsNo()" id="NotDiagnosed ">No</button>
             </div>
         </div>
 
@@ -141,8 +141,8 @@
             <label style="border-style: groove">ANSWERED NO</label>
         </div>
 
-        <div id="ContinueToStep3" class="Continue" align="ceneter">
-            <button onclick="ContinueToStep3()" id="Continue">Continue</button>
+        <div id="ContinueToStep3" class="btn-group" align="center">
+            <button id="Continue"style="width: 35vw"class="btn-group"onclick="ContinueToStep3()">Continue</button>
         </div>
     </div>
 

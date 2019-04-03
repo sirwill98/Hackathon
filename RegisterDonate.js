@@ -1,11 +1,52 @@
 function ContinueToStep2()
 {
     //Continue to step 2
+    window.open("RegisterDonateStep2.html", "_self");
+
 }
 
 function ContinueToStep3()
 {
     //Continue to step 3
+    window.open("RegisterDonateStep3.html", "_self");
+
+}
+
+function ContinueToStep4()
+{
+    //Continue to step 3
+    window.open("RegisterDonateStep4.html", "_self");
+
+}
+function ContinueToStep5()
+{
+    //Continue to step 3
+    window.open("RegisterDonateStep5.html", "_self");
+
+}
+function ContinueToStep6()
+{
+    //Continue to step 3
+    window.open("RegisterDonateStep5.html", "_self");
+
+}
+function ContinueToStep7()
+{
+    //Continue to step 3
+    window.open("RegisterDonateStep5.html", "_self");
+
+}
+function ContinueToStep8()
+{
+    //Continue to step 3
+    window.open("RegisterDonateStep5.html", "_self");
+
+}
+function ContinueToHome()
+{
+    //Continue to step 3
+    window.open("index.html", "_self");
+
 }
 
 function removeElement(elementId) {
@@ -34,6 +75,7 @@ function DonateLocationYes()
     document.getElementById("LocationSuccess").style.visibility = "visible";
     document.getElementById("AttributesLabel").style.visibility = "visible";
     document.getElementById("Attributes").style.visibility = "visible";
+    document.getElementById("Continue").style.visibility = "visible";
 }
 
 function DonateLocationNo()
