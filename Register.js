@@ -44,7 +44,7 @@ function RegisterUser()
     }
     else
     {
-        document.getElementById("error_lbl").innerText = "Must be over 16 to register OR Must be under 60";
+        document.getElementById("error_lbl").innerText = "Must be over 16 to register and Must be under 60";
     }
 }
 
