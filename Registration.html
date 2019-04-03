@@ -42,8 +42,8 @@
                 <td><input type="email" id="email" ></input></td>
             </tr>
             <tr>
-                <td> Age: </td>
-                <td><input type="age" id="age" ></input></td>
+                <td> Date of Birth: </td>
+                <td><input type="date" id="dob" max="today" ></input></td>
             </tr>
             <tr>
                 <td> Password: </td>
@@ -83,11 +83,12 @@
     </div>
 
     <br><br>
-    <button id="register" class="submit" onclick="RegisterUser()">Register</button>
+    <div align="center">
+        <button id="register" class="submit" onclick="RegisterUser()">Register</button>
+    </div>
+
     <label id="error_lbl"></label>
     <script>
-
-
 
         //collapsible menu
         var coll = document.getElementsByClassName("collapsible");
@@ -107,7 +108,6 @@
 
 
     </script>
-</head>
 </div>
 
 </body>

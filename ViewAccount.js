@@ -17,6 +17,10 @@ function DisplayDetails()
             document.getElementById("donor").innerHTML += "You are not currently a donor";
         }
     }
+    document.getElementById("nameIn").placeholder += user.name;
+    document.getElementById("ageIn").placeholder += user.age;
+    document.getElementById("emailIn").placeholder += user.email;
+    document.getElementById("numberIn").placeholder += user.number;
 }
 
 function editInfo(){
