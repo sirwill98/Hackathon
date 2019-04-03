@@ -14,6 +14,21 @@ function RegisterUser()
     if(password === passwordConf)
     {
         var user = {name:name, email:email, password:password, uid:uid, donor:donor, number:number};
-        RegisterJSON(user);
+        for (var member in user)
+        {
+            if (user[member] == null)
+            {
+                document.getElementById("error_lbl").innerText = "All fields must be complete to create a user";
+            }
+            else
+            {
+                RegisterJSON(user);
+
+            }
+        }
+    }
+    else
+    {
+        document.getElementById("error_lbl").innerText = "passwords do not match";
     }
 }
