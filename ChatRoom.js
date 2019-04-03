@@ -57,17 +57,17 @@ function selectResponse(message){
 
 
     if(privacyResponse){
-        messages.push(responses[1]);
+        messages.push(responses[2]);
         displayMessages();
     }
 
     if(painResponse){
-        messages.push(responses[0]);
+        messages.push(responses[1]);
         displayMessages();
     }
 
     if(locationResponse){
-        messages.push(responses[2]);
+        messages.push(responses[3]);
         displayMessages();
     }
 
@@ -112,4 +112,4 @@ function initChat(){
     setInterval(downloadMessages, 3000);
 }
 
-window.onload = initChat;
+window.addEventListener("load", initChat);
