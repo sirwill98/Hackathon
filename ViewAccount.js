@@ -29,19 +29,12 @@ function editInfo(){
 
 function UpdateDetails()
 {
-    var arr = [];
     var name = document.getElementById("nameIn").value;
     var age = document.getElementById("ageIn").value;
     var email = document.getElementById("emailIn").value;
     var pass1In = document.getElementById("pass1In").value;
     var pass2In = document.getElementById("pass2In").value;
-    var number = document.getElementById("number").value;
-    arr.push(name);
-    arr.push(age);
-    arr.push(email);
-    arr.push(pass1In);
-    arr.push(pass2In);
-    arr.push(number);
+    var numberIn = document.getElementById("numberIn").value;
 
     if(pass1In === pass2In)
     {
@@ -49,39 +42,39 @@ function UpdateDetails()
         if(localStorage.getItem(userName))
         {
             var user = JSON.parse(localStorage.getItem(userName));
-            if(name !== null)
+            if(name !== null && name !== "")
             {
                 if(user.name !== name)
                 {
                     user.name = name;
                 }
             }
-            if(age !== null)
+            if(age !== null && age !== "")
             {
                 if(user.age !== age)
                 {
                     user.age = age;
                 }
             }
-            if(email !== null)
+            if(email !== null && email !== "")
             {
                 if(user.email !== email)
                 {
                     user.email = email;
                 }
             }
-            if(pass1In !== null)
+            if(pass1In !== null && pass1In !== "")
             {
                 if(user.password !== pass1In)
                 {
                     user.password = pass1In;
                 }
             }
-            if(age !== null)
+            if(numberIn !== null && numberIn !== "")
             {
-                if(user.age !== age)
+                if(user.number !== numberIn)
                 {
-                    user.age = age;
+                    user.number = numberIn;
                 }
             }
             localStorage.setItem(user.username, JSON.stringify(user));
