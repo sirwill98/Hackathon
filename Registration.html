@@ -17,24 +17,12 @@
     <script type="text/javascript" src="JSON.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <title>Register</title>
-    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
-        <button class="account" onclick="goToProfile()"><i class="fa fa-user"></i></button>
-
-        <h1>&nbsp;&nbsp;Home </h1></header>
+    <header>
+        <h1>Register </h1>
+    </header>
 <body>
 
     <div class="container">
-        <div id="dropdown" class="dropdown">
-            <br>
-            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
-            <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
-            <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-            <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
-            <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
-            <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
-            <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
-        </div>
-        
         <table class="form-table">
             <tr>
                 <td> Name: </td>
@@ -68,43 +56,13 @@
         </table>
 
 
-        <div id="dropdown" class="dropdown">
-            <br>
-            <button class="sidebar"  onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
-            <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
-            <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-            <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
-            <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
-            <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
-            <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
-        </div>
-
     <br><br>
-    <div align="center">
-        <button id="register" class="submit" onclick="RegisterUser()">Register</button>
+    <div>
+        <button style="margin-left: 0vw" id="register" class="submit" onclick="RegisterUser()">Register</button>
     </div>
 
     <label id="error_lbl"></label>
-    <script>
 
-        //collapsible menu
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content =document.getElementById("dropdown");
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-
-
-    </script>
 </div>
 
 </body>
