@@ -6,6 +6,46 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
+    <title>Anthony Nolan - FAQ</title>
+
+    <style>
+        .infoCollapsible {
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .infoCollapsible.active, .infoCollapsible:hover {
+            background-color: #555;
+        }
+
+        .infoCollapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .infoCollapsible.active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+
     <link rel = "stylesheet" href = "toolkit.css" />
     <link rel = "stylesheet" href = "main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,28 +57,149 @@
         <button class="account"><i class="fa fa-user"></i></button>
 
         <h1>&nbsp;&nbsp;FAQs </h1></header>
+</head>
 <body>
 
     <div id="faqs">
         <p><b>What is Anthony Nolan?</b></p>
         <p>
-        Anthony Nolan is a charity that saves the lives of people with blood cancer by matching remarkable people willing to donate their bone marrow (or stem cells) to patients in desperate need of a transplant.
-
-        We also do vital research to make stem cell transplants as successful as possible.
+        You must be aged 16-39 and meet our medical criteria (general good health).
         </p>
-        <p><b>Is there a matching donor for everyone who needs a stem cell transplant?</b></p>
+        <p><b>Once I've given a sample, is that it?</b></p>
         <p>
-        Since the launch of our register in 1974, we have made 16,000 stem cell transplants possible.
-
-        However, even with over half a million people on the register, we urgently need to increase the size and diversity of potential donors. One day, we hope to help everyone who needs a lifesaving transplant.
+        This is the first step towards potentially saving someones life. If you come up as a possible match we'll contact you to explain
+            what happens next.
         </p>
-        <p><b>Is Anthony Nolan a charity?</b></p>
-        <p>Yes, we’re an independent charity. We rely on financial support from people and companies.
-
-        Our charity number is 803716 in England and Wales and 38827 in Scotland.
+        <p><b>iI'm 31 and healthy. Why can't I join the register?</b></p>
+        <p>
+            Donors between the ages of 16-30 are far more likely to be chosen by hospitals to go ahead for transplant. We have limited funds
+            and resources, so we need to focus on recruiting people who have the best possible chance of being chosen to donate.
+            <br/>
+            <br/>
+            If you'd like to help our work in some other way, we'd be incredibly grateful. For more information, visit <a href="http://www.anthonynolan.org/8-ways">anthonynolan.org/8-ways</a>
+        </p>
+        <p><b>Is the procedure painful?</b></p>
+        <p>
+            90% of our donors now give their stem cells via the bloodstream. It's a simple, painless process, very similar to giving blood.
+            <br/>
+            <br/>
+            If you give your bone marrow, you'll be under anaesthetic. Afterwards you'll probably feel a bit tired and bruised, and you might
+            have to take a little time off work. That's all.
         </p>
     </div>
-
+    <div>
+        <button class="infoCollapsible">Blood donation journey</button>
+        <div class="content">
+            <p><b>Donating through blood</b></p>
+            <p>Nearly 90% of all of our donations are done this way</p>
+            <table>
+                <tr>
+                    <td style="vertical-align:top">
+                        <b>1. Have some tests</b>
+                        <p>
+                            You go to a specialised hospital and have some tests done - blood tests, a chest x-ray, that sort of thing. A week
+                            later, we'll call to say the tests are fine, and then send you details about things like dates, hotels and
+                            transportation.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>2. Daily injections</b>
+                        <p>
+                            You'll receive a four day course of injections that stimulate your body to produce stem cells. A nurse comes to
+                            your office or home to give you the injections. You'll probably notice your bones aching a little. Don't worry,
+                            its totally normal.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>3. Go to the hospital</b>
+                        <p>
+                            You and your companion will then head to the hotel where you'll stay the night - don't worry, we pay for it all.
+                            The next morning, you'll head over to the hospital.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>4. The big day</b>
+                        <p>
+                            Now you're ready to donate. You're connected to a machine which takes blood from one arm, filters out the stem
+                            cells, and returns your blood to the other arm. The process takes four to five hours. It can get a bit boring,
+                            so you might want to watch telly or chat to your companion. If there are enough stem cells - and there usually are - you can go home.
+                            If not we need you to have another injection and return the next day for another session on the machine.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>5. Get some rest</b>
+                        <p>
+                            After your big day you'll probably feel tired and might experience some flu-like symptoms. These always pass
+                            after a few days. Get plenty of well-deserved rest and you'll soon be feeling right as rain
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>6. The difference it makes</b>
+                        <p>
+                            Your stem cells are the things which are missing from the person you're a match for. Yours will kick-start
+                            there system into action and help them recover from a very vulnerable state. You've potentially saved a life.
+                            Amazing, huh?
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="infoCollapsible">Bone marrow donation journey</button>
+        <div class="content">
+            <p><b>Donating through bone marrow</b></p>
+            <p>This is unlikely, but it's sometimes better for the patient</p>
+            <table>
+                <tr>
+                    <td style="vertical-align:top">
+                        <b>1. Have some tests</b>
+                        <p>
+                            As with donating by blood, You go to a specialised hospital for some simple tests, we'll call to say the tests are fine, and then send you details about things like dates, hotels and
+                            transportation.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>2. Go to the hospital</b>
+                        <p>
+                            You travel with your companion to the hospital. You stay in the hospital and your companion stays in a hotel. Don't
+                            worry about the cost - we'll pay for it all.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>3. The big day</b>
+                        <p>
+                            In the morning, you'll be given a general anaesthetic. During a short procedure - about 30 minutes - you'll lie
+                            on your front and bone marrow is taken from your pelvic bone using a needle and syringe. You won't need
+                            stitches after the procedure but you'll have two plasters where the bone marrow was taken from. People think
+                            donating bone marrow is really painful, but donors tell us that it's not any worse than how you'd feel after
+                            a heavy workout in the gym
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>4. Stay overnight</b>
+                        <p>
+                            You wake up and you might feel a bit bruised where the needles were inserted. Your companion arrives and you
+                            spend the day and one more night in hospital recovering from the anaesthetic before going home the next day.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>5. Get plenty of rest</b>
+                        <p>
+                            For the next few days you'll probably feel some pain where the needles were inserted, as well as general
+                            tiredness. Take some paracetamol and get some well-deserved rest. You'll soon be right as rain.
+                        </p>
+                    </td>
+                    <td style="vertical-align:top">
+                        <b>6. The difference it makes</b>
+                        <p>
+                            The stem cells you've donated will be used to give someone with blood cancer that most special gift - the chance
+                            of life. Well done! That makes you pretty fantastic.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="Info.js"></script>
     <div id="dropdown" class="dropdown">
         <br>
         <button class="sidebar" onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
@@ -81,7 +242,7 @@
 
 
     </script>
-</head>
+
 
 </body>
 <footer><br></footer>
