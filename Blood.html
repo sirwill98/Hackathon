@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Anthony Nolan - FAQ</title>
+
+    <style>
+        .infoCollapsible {
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .infoCollapsible.active, .infoCollapsible:hover {
+            background-color: #555;
+        }
+
+        .infoCollapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .infoCollapsible.active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+    <link rel = "stylesheet" href = "toolkit.css" />
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
+    <title>FAQs</title>
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+        <button class="account" ><i class="fa fa-user"></i></button>
+
+        <h1>&nbsp;&nbsp;Journey - Blood Donations </h1></header>
+</head>
+<body>
+<div>
+    <p><b>Donating through blood</b></p>
+    <p>Nearly 90% of all of our donations are done this way</p>
+    <table class="infoTable">
+        <tr>
+            <td style="vertical-align:top">
+                <b>1. Have some tests</b>
+                <p>
+                    You go to a specialised hospital and have some tests done - blood tests, a chest x-ray, that sort of thing. A week
+                    later, we'll call to say the tests are fine, and then send you details about things like dates, hotels and
+                    transportation.
+                </p>
+            </td>
+            <td style="vertical-align:top">
+                <b>2. Daily injections</b>
+                <p>
+                    You'll receive a four day course of injections that stimulate your body to produce stem cells. A nurse comes to
+                    your office or home to give you the injections. You'll probably notice your bones aching a little. Don't worry,
+                    its totally normal.
+                </p>
+            </td>
+            <td style="vertical-align:top">
+                <b>3. Go to the hospital</b>
+                <p>
+                    You and your companion will then head to the hotel where you'll stay the night - don't worry, we pay for it all.
+                    The next morning, you'll head over to the hospital.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:top">
+                <b>4. The big day</b>
+                <p>
+                    Now you're ready to donate. You're connected to a machine which takes blood from one arm, filters out the stem
+                    cells, and returns your blood to the other arm. The process takes four to five hours. It can get a bit boring,
+                    so you might want to watch telly or chat to your companion. If there are enough stem cells - and there usually are - you can go home.
+                    If not we need you to have another injection and return the next day for another session on the machine.
+                </p>
+            </td>
+            <td style="vertical-align:top">
+                <b>5. Get some rest</b>
+                <p>
+                    After your big day you'll probably feel tired and might experience some flu-like symptoms. These always pass
+                    after a few days. Get plenty of well-deserved rest and you'll soon be feeling right as rain
+                </p>
+            </td>
+            <td style="vertical-align:top">
+                <b>6. The difference it makes</b>
+                <p>
+                    Your stem cells are the things which are missing from the person you're a match for. Yours will kick-start
+                    there system into action and help them recover from a very vulnerable state. You've potentially saved a life.
+                    Amazing, huh?
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+<script type="text/javascript" src="Info.js"></script>
+<div id="dropdown" class="dropdown">
+    <br>
+    <button class="sidebar" onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
+
+    <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+
+
+    <!--TODO socials-->
+
+    <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+    <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+
+    <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+</div>
+
+
+<script>
+    //collapsible menu
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content =document.getElementById("dropdown");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+
+</script>
+
+
+</body>
+<footer><br></footer>
+</html>
