@@ -10,7 +10,7 @@ var responses = [
             "to third parties for their own marketing purposes."},
     {id:"3", user:"user2", message: "While your stem cells may be used to help a patient anywhere" +
             " in the world, the donations always take place in the UK."},
-    {id:4, user: "user2", message: "I'm sorry I don't quite know what you mean. The answer might be" +
+    {id:"4", user: "user2", message: "I'm sorry I don't quite know what you mean. The answer might be" +
             " in our FAQ section and if not you can try our website https://www.anthonynolan.org/ "}
 ];
 
