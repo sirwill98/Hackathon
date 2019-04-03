@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <script type="text/javascript" src="main.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="mobile-web-app-capable" content="yes" />
@@ -55,7 +57,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
 <title>Main</title>
 <header><button class="collapsible">&nbsp;≡&nbsp;</button>
-    <button class="account"><i class="fa fa-user" onclick="parent.location='UserAccountPage.html'"></i></button>
+    <button class="account" onclick="goToProfile()"><i class="fa fa-user"></i></button>
 
     <h1>&nbsp;&nbsp;Home </h1></header>
 <main>
@@ -65,28 +67,13 @@
         <br>
         <button class="sidebar"><i class="fa fa-home"></i>Home</button>
         <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
-        <button class="sidebar"onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
-        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+        <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+        <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+        <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
         <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
         <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
     </div>
     <script>
-        //collapsible menu
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content =document.getElementById("dropdown");
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
     </script>
 
 
@@ -153,4 +140,5 @@
     </footer>
 </main>
 </body>
+<script>init();</script>
 </html>

@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" href="UserAccountPage.css"/>
     <link rel="stylesheet" href="main.css"/>
+    <link rel = "stylesheet" href = "toolkit.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <script src="ViewAccount.js"></script>
+    <script src="Cookies.js"></script>
     <title>UserAccount</title>
 </head>
-<body>
+<body onload="DisplayDetails()">
 
 
 <header>
@@ -21,8 +23,8 @@
 
     &nbsp;&nbsp;Anthony Nolan
 </header>
-
-<main onload="DisplayDetails()">
+<div class="container">
+<main>
     <div id="AccountInformation">
         <div id="info">
             <h3 id="name">Name: </h3>
@@ -32,7 +34,7 @@
             <h4 id="donor">Donor: </h4>
         </div>
         <div id="buttons">
-            <button id="edit" onclick="editInfo()">Edit info</button>
+            <button id="edit" class="submit" style="left:35vw" onclick="editInfo()">Edit info</button>
         </div>
         <div id="infoForm" class="form">
             <h3 id="infoFormTitle">Edit Info: </h3>
@@ -59,7 +61,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button id="updateInfo" onclick="DisplayDetails()">Save</button>
+                        <button id="updateInfo" class="submit" onclick="UpdateDetails()">Save</button>
                     </td>
                 </tr>
             </table>
@@ -95,7 +97,7 @@
         <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
     </div>
 </main>
-
+</div>
 <script>
     //collapsible menu
     var coll = document.getElementsByClassName("collapsible");
@@ -114,6 +116,8 @@
     }
 </script>
 </body>
+<script type="text/javascript" src="main.js"></script>
 
+<script>init();</script>
 
 </html>

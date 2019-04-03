@@ -54,9 +54,9 @@
 
     <title>FAQs</title>
     <header><button class="collapsible">&nbsp;≡&nbsp;</button>
-        <button class="account"><i class="fa fa-user"></i></button>
+        <button class="account" onclick="goToProfile()"><i class="fa fa-user"></i></button>
 
-        <h1>&nbsp;&nbsp;FAQs </h1></header>
+        <h1>&nbsp;&nbsp;Home </h1></header>
 </head>
 <body>
 
@@ -92,7 +92,7 @@
         <div class="content">
             <p><b>Donating through blood</b></p>
             <p>Nearly 90% of all of our donations are done this way</p>
-            <table>
+            <table class="infoTable">
                 <tr>
                     <td style="vertical-align:top">
                         <b>1. Have some tests</b>
@@ -117,6 +117,8 @@
                             The next morning, you'll head over to the hospital.
                         </p>
                     </td>
+                </tr>
+                <tr>
                     <td style="vertical-align:top">
                         <b>4. The big day</b>
                         <p>
@@ -148,7 +150,7 @@
         <div class="content">
             <p><b>Donating through bone marrow</b></p>
             <p>This is unlikely, but it's sometimes better for the patient</p>
-            <table>
+            <table class="infoTable">
                 <tr>
                     <td style="vertical-align:top">
                         <b>1. Have some tests</b>
@@ -174,6 +176,8 @@
                             a heavy workout in the gym
                         </p>
                     </td>
+                </tr>
+                <tr>
                     <td style="vertical-align:top">
                         <b>4. Stay overnight</b>
                         <p>
@@ -202,45 +206,22 @@
     <script type="text/javascript" src="Info.js"></script>
     <div id="dropdown" class="dropdown">
         <br>
-        <button class="sidebar" onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
-
+        <button class="sidebar"  onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
+        <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
         <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-
-
-        <!--TODO socials-->
-
-        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
-
-        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
-
-
-        <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
-
-
+        <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+        <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
+        <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+        <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
     </div>
 
 
-    <script>
-        //collapsible menu
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content =document.getElementById("dropdown");
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-
-
-    </script>
 
 
 </body>
 <footer><br></footer>
+<script type="text/javascript" src="main.js"></script>
+
+<script>init();</script>
 </html>
