@@ -36,23 +36,7 @@
         <br><br>
         <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
     </div>
-    <script>
-        //collapsible menu
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content =document.getElementById("dropdown");
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
 
 
     <h2>Our head office and main address is:</h2>
@@ -70,4 +54,7 @@
     <a href="mailto:info@anthonynolan.org">Email Us</a>
 </main>
 </body>
+<script type="text/javascript" src="main.js"></script>
+
+<script>init();</script>
 </html>
