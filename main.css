@@ -185,7 +185,7 @@ td {
     top: 1vh;
     width: 12%;
     height:7%;
-    text-align: center;
+    text-align: left;
 
 
 }
@@ -219,6 +219,12 @@ td {
     position: absolute;
     right: 0;
     width: 15rem;
+}
+
+.infoCollapsible{
+    max-width: 100%;
+    background: #899c1c;
+    z-index: -1;
 }
 
 
