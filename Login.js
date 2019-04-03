@@ -13,6 +13,6 @@ function login()
     }
     else
     {
-
+        document.getElementById("error_msg").innerText = "no account found, you can register using the link below";
     }
 }
