@@ -5,62 +5,68 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
-    <link rel="apple-touch-icon" href="anlogo.jpeg" />
-    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
+    <style>
+        .infoCollapsible {
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
 
+        .infoCollapsible.active, .infoCollapsible:hover {
+            background-color: #555;
+        }
+
+        .infoCollapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .infoCollapsible.active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
     <link rel = "stylesheet" href = "main.css" />
     <link rel = "stylesheet" href = "toolkit.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-
-    <title>Anthony Nolan</title>
-
 </head>
-
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
 <header><button class="collapsible">&nbsp;≡&nbsp;</button>
     <button class="account"><i class="fa fa-user"></i></button>
-    <h1>&nbsp;&nbsp;Home</h1> </header>
+
+    <h1>&nbsp;&nbsp;Home </h1></header>
 <main>
-    <body>
-
-
-    <button class="account"><i class="fa fa-user"></i></button>
-
     <div id="dropdown" class="dropdown">
-        <table class="form-table">
         <br>
-
         <button class="sidebar"><i class="fa fa-home"></i>Home</button>
-
-        <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
-
-
+        <button class="sidebar"onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
         <!--TODO socials-->
-
         <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
-
-
         <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
-
-
-        <button class="sidebar"><i class="fa fa-info"></i> Info</button>
-
-
         <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
-        </table>
-
     </div>
-
-
     <script>
-        function open() {
-            window.open("FAQ.html");
-        }
-
-
-
         //collapsible menu
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -76,17 +82,62 @@
                 }
             });
         }
-
-
     </script>
-</body>
 
+
+
+    <button class="infoCollapsible">We are Anthony Nolan</button>
+    <div class="content">
+        <p>Every day, we match incredible individuals willing to donate their blood stem cells or bone marrow to people with blood cancer and blood disorders who desperately need lifesaving transplants.</p>
+        <p></p>
+        <p>It all began in 1974. With her three-year-old son Anthony in urgent need of a bone marrow transplant, Shirley Nolan set up the world’s first register to match donors with people in desperate need.</p>
+        <p></p>
+        <p>Now, we help three people each day find that lifesaving match.</p>
+        <img src="Images/infoImage1.jpg">
+    </div>
+    <button class="infoCollapsible">An extraordinary journey </button>
+    <div class="content">
+        <p>It all starts with someone being ready and waiting to help. And thanks to the generosity of our donors, the new mums, the great minds in our labs, and the selflessness of our supporters, it can end with someone’s life being saved.</p>
+        <table>
+            <tr>
+                <td style="padding: 0 15px">
+                    <h2>720,000</h2>
+                    <p>People on our UK register</p>
+                </td>
+                <td style="padding: 0 15px">
+                    <h2>2,000</h2>
+                    <p>People in the UK who need a match each year</p>
+                </td>
+                <td style="padding: 0 15px">
+                    <h2>68,658</h2>
+                    <p>Potential donors recruited last year</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button class="infoCollapsible">Our Research</button>
+    <div class="content">
+        <p>We conduct world-class research into stem cell matching and transplants, so we can make sure every person in need gets the best possible treatment.</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/infoImage2.jpg">
+                    <h2>Third-generation sequencing</h2>
+                    <p>We have recently launched our new third-generation sequencing (TGS) in our SMARTLAB® – a revolution in lifesaving technology.</p>
+                </td>
+                <td>
+                    <img src="Images/infoImage3.jpg">
+                    <h2>Services for transplant centres</h2>
+                    <p>We can help you find blood stem cell and bone marrow donors, with our register of over 600,000 donors.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="Info.js"></script>
+    <a class="twitter-timeline" data-width="1200" data-height="800" data-theme="light" href="https://twitter.com/AnthonyNolan?ref_src=twsrc%5Etfw">Tweets by AnthonyNolan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <footer>
+        <div style="float: right" class="fb-like" data-href="https://www.facebook.com/AnthonyNolan/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </footer>
 </main>
-<footer>
-    <br>
-</footer>
-
-<script>
-
-</script>
+</body>
 </html>
