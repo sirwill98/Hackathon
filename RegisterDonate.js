@@ -27,19 +27,19 @@ function ContinueToStep5()
 function ContinueToStep6()
 {
     //Continue to step 3
-    window.open("RegisterDonateStep5.html", "_self");
+    window.open("RegisterDonateStep6.html", "_self");
 
 }
 function ContinueToStep7()
 {
     //Continue to step 3
-    window.open("RegisterDonateStep5.html", "_self");
+    window.open("RegisterDonateStep7.html", "_self");
 
 }
 function ContinueToStep8()
 {
     //Continue to step 3
-    window.open("RegisterDonateStep5.html", "_self");
+    window.open("RegisterDonateStep8.html", "_self");
 
 }
 function ContinueToHome()

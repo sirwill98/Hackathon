@@ -4,16 +4,17 @@ function DisplayDetails()
     if(localStorage.getItem(userName))
     {
         var user = JSON.parse(localStorage.getItem(userName));
-        document.getElementById("name").innerText = user.name;
-        document.getElementById("email").innerText = user.email;
-        document.getElementById("number").innerText = user.number;
+        document.getElementById("name").innerHTML = user.name;
+        document.getElementById("age").innerHTML = user.age;
+        document.getElementById("email").innerHTML = user.email;
+        document.getElementById("number").innerHTML = user.number;
         if(user.donor === true)
         {
-            document.getElementById("donor").innerText = "You are a donor, Thank you";
+            document.getElementById("donor").innerHTML = "You are a donor, Thank you";
         }
         else
         {
-            document.getElementById("donor").innerText = "You are not currently a donor";
+            document.getElementById("donor").innerHTML = "You are not currently a donor";
         }
     }
 }
