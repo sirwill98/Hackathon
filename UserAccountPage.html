@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <script src="ViewAccount.js"></script>
+    <script src="Cookies.js"></script>
     <title>UserAccount</title>
 </head>
-<body>
+<body onload="DisplayDetails()">
 
 
 <header>
@@ -22,7 +23,7 @@
     &nbsp;&nbsp;Anthony Nolan
 </header>
 
-<main onload="DisplayDetails()">
+<main>
     <div id="AccountInformation">
         <div id="info">
             <h3 id="name">Name: </h3>
@@ -59,7 +60,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button id="updateInfo" onclick="DisplayDetails()">Save</button>
+                        <button id="updateInfo" onclick="UpdateDetails()">Save</button>
                     </td>
                 </tr>
             </table>

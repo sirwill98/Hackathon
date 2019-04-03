@@ -1,11 +1,8 @@
-/**
- * @return {boolean}
- */
 function RegisterJSON(user)
 {
     if(localStorage.getItem("user.username") != null)
     {
-        return false;
+        document.getElementById("error_lbl").innerText = "this user already exists"
     }
     else
     {
