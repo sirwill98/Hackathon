@@ -13,7 +13,9 @@ body{
 
 }
 
-
+ul1 {
+    columns: 2;
+}
 
 header {
     background: #999;

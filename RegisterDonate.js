@@ -78,8 +78,9 @@ function DrugsNo()
 
 function MedicalConditionsYes()
 {
-    document.getElementById("ConditionsNotOK").style.visibility = "hidden";
-    document.getElementById("TakenDrugs").style.visibility = "visible";
+    document.getElementById("MedicalConditionsLabel").style.visibility = "hidden";
+    document.getElementById("MedicalConditions").style.visibility = "hidden";
+    document.getElementById("ConditionsNotOK").style.visibility = "visible";
 }
 
 function MedicalConditionsNo()
