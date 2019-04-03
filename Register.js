@@ -6,7 +6,7 @@ function RegisterUser()
     var password = document.getElementById("password").value;
     var passwordConf = document.getElementById("passwordConf").value;
     var number = document.getElementById("number").value;
-    var dob = document.getElementById("dob").value;
+    var age = document.getElementById("age").value;
     var donor = false;
     var d = new Date();
     var uid = d.getTime();
@@ -17,11 +17,11 @@ function RegisterUser()
     var month = dob.getMonth();
     var year = dob.getFullYear();*/
 
-    if((getAge(dob) >= 16) && (getAge(dob) <= 60))
+    if((age >= 16) && (age <= 60))
     {
         if(password === passwordConf)
         {
-            var user = {name:name, email:email, username:username ,password:password, uid:uid, donor:donor, number:number, dob:dob};
+            var user = {name:name, email:email, username:username ,password:password, uid:uid, donor:donor, number:number, age:age};
             for (var member in user)
             {
                 if (user[member] == null)
@@ -46,20 +46,4 @@ function RegisterUser()
     {
         document.getElementById("error_lbl").innerText = "Must be over 16 to register and Must be under 60";
     }
-}
-
-function getAge(birthDateString) {
-    var today = new Date();
-    var birthDate = new Date(birthDateString);
-
-    var tYear = today.getFullYear();
-    var byear = birthDate.getFullYear();
-
-
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
 }
