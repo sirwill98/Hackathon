@@ -6,6 +6,7 @@ function RegisterUser()
     var password = document.getElementById("password").value;
     var passwordConf = document.getElementById("passwordConf").value;
     var number = document.getElementById("number").value;
+    var age = document.getElementById("age").value;
     var donor = false;
     var d = new Date();
     var uid = d.getTime();
@@ -14,7 +15,7 @@ function RegisterUser()
 
     if(password === passwordConf)
     {
-        var user = {name:name, email:email, username:username ,password:password, uid:uid, donor:donor, number:number};
+        var user = {name:name, email:email, username:username ,password:password, uid:uid, donor:donor, number:number, age:age};
         for (var member in user)
         {
             if (user[member] == null)

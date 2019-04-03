@@ -3,7 +3,7 @@
  */
 function RegisterJSON(user)
 {
-    if(localStorage.getItem("user.username") === null)
+    if(localStorage.getItem("user.username") != null)
     {
         return false;
     }
