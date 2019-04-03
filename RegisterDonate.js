@@ -44,6 +44,10 @@ function ContinueToStep8()
 }
 function ContinueToHome()
 {
+    var name = getCookie("user");
+    var user = JSON.parse(localStorage.getItem(name));
+    user.donor = true;
+    localStorage.setItem(user.username, JSON.stringify(user));
     //Continue to step 3
     window.open("index.html", "_self");
 
