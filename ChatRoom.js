@@ -39,8 +39,6 @@ function displayMessages(){
 function selectResponse(message){
     var greetingResponse, privacyResponse, painResponse, locationResponse;
 
-    console.log(message);
-
     greetingResponse = messages.length === 1;
 
     privacyResponse = contains(message, "cookie") ||
@@ -57,28 +55,24 @@ function selectResponse(message){
     locationResponse = contains(message, "location") ||
         contains(message, "where");
 
-    if(greetingResponse){
-        messages.push(responses[0]);
-        displayMessages();
-    }
 
     if(privacyResponse){
-        messages.push(responses[2]);
-        displayMessages();
-    }
-
-    if(painResponse){
         messages.push(responses[1]);
         displayMessages();
     }
 
+    if(painResponse){
+        messages.push(responses[0]);
+        displayMessages();
+    }
+
     if(locationResponse){
-        messages.push(responses[3]);
+        messages.push(responses[2]);
         displayMessages();
     }
 
     if(!greetingResponse && !privacyResponse && !painResponse && !locationResponse){
-        messages.push(responses[4]);
+        messages.push(responses[3]);
         displayMessages();
     }
 }
@@ -110,6 +104,8 @@ function initChat(){
             sendMessage(messageBox.value);
         }
     });
+
+    messages.push(responses[0]);
 
     downloadMessages();
 
