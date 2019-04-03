@@ -303,6 +303,10 @@ span.psw {
     max-width: 100vw;
 }
 
+.infoTable td
+{
+    width: 50vw;
+}
 .submit{
     left:35vw;
     background-color: #899c1c; /* Green background */
