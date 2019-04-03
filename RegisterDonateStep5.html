@@ -33,8 +33,112 @@
 
 <div class="container" align="center">
     <label>Step 5 of 8</label>
+    <div>
+        <h4>Medical History</h4>
+        Please answer the following questions to the best of your ability.
 
+        Answers to these questions will not necessarily exclude you from the register. We will contact you in the future if we need more information.
+    </div>
+    <br/>
 
+    <div>
+        <label><b>Have you ever been refused as a blood donor?</b></label>
+        <br/>
+        <input type="radio" name="bloodDonor" value="yes"> Yes
+        <input type="radio" name="bloodDonor" value="no"> No
+    </div>
+    <br/>
+    <div>
+        <label><b>Have you ever received a blood transfusion?</b></label>
+        <br/>
+        <input type="radio" name="bloodTransfusion" value="yes"> Yes
+        <input type="radio" name="bloodTransfusion" value="no"> No
+    </div>
+    <br/>
+    <div>
+        <label><b>Please select which, if any, of the following conditions you have ever had</b></label>
+        Having any of these conditions will not necessarily exclude you from the register. However we may contact you in the future if we need more information.
+    </div>
+    <br/>
+    <div align="left">
+        <fieldset id="anaemia">
+            <input name="anaemia.diagnosed" id="anaemia.diagnosed" type="checkbox" value="">
+            <span>Anaemia</span>
+        </fieldset>
+        <fieldset id="arthritis">
+            <input name="arthritis.diagnosed" id="arthritis.diagnosed" type="checkbox" value="">
+            <span>Arthritis</span>
+        </fieldset>
+        <fieldset id="asthma">
+            <input name="asthma.diagnosed" id="asthma.diagnosed" type="checkbox" value="">
+            <span>Asthma or breathing problems</span>
+        </fieldset>
+        <fieldset id="backAndNeck">
+            <input name="backAndNeck.diagnosed" id="backAndNeck.diagnosed" type="checkbox" value="">
+            <span>Back and neck pain including fractures</span>
+        </fieldset>
+        <fieldset id="bleeding">
+            <input name="bleeding.diagnosed" id="bleeding.diagnosed" type="checkbox" value="">
+            <span>Bleeding problems</span>
+        </fieldset><fieldset id="bloodClots">
+            <input name=".diagnosed" id="bloodClots.diagnosed" type="checkbox" value="">
+            <span>Blood clots or deep vein thrombosis</span>
+        </fieldset>
+        <fieldset id="colitis">
+            <input name="colitis.diagnosed" id="colitis.diagnosed" type="checkbox" value="">
+            <span>Colitis</span>
+        </fieldset>
+        <fieldset id="depression">
+            <input name="depression.diagnosed" id="depression.diagnosed" type="checkbox" value="">
+            <span>Depression</span>
+        </fieldset>
+        <fieldset id="eczema">
+            <input name="eczema.diagnosed" id="eczema.diagnosed" type="checkbox" value="">
+            <span>Eczema</span>
+        </fieldset>
+        <fieldset id="heartMurmurs">
+            <input name="heartMurmurs.diagnosed" id="heartMurmurs.diagnosed" type="checkbox" value="">
+            <span>Heart Murmurs</span>
+        </fieldset>
+        <fieldset id="highBlood">
+            <input name="highBlood.diagnosed" id="highBlood.diagnosed" type="checkbox" value="">
+            <span>High blood pressure</span>
+        </fieldset>
+        <fieldset id="malaria">
+            <input name="malaria.diagnosed" id="malaria.diagnosed" type="checkbox" value="">
+            <span>Malaria</span>
+        </fieldset>
+        <fieldset id="me">
+            <input name="me.diagnosed" id="me.diagnosed" type="checkbox" value="">
+            <span>ME</span>
+        </fieldset>
+        <fieldset id="psoriasis">
+            <input name="psoriasis.diagnosed" id="psoriasis.diagnosed" type="checkbox" value="">
+            <span>Psoriasis</span>
+        </fieldset>
+        <fieldset id="severeAllergies">
+            <input name="severeAllergies.diagnosed" id="severeAllergies.diagnosed" type="checkbox" value="">
+            <span>Severe allergies</span>
+        </fieldset>
+        <fieldset id="sickleCell">
+            <input name="sickleCell.diagnosed" id="sickleCell.diagnosed" type="checkbox" value="">
+            <span>Sickle cell trait or thalassaemia trait</span>
+        </fieldset>
+        <fieldset id="slippedDiscs">
+            <input name="slippedDiscs.diagnosed" id="slippedDiscs.diagnosed" type="checkbox" value="">
+            <span>Slipped discs</span>
+        </fieldset>
+        <fieldset id="tuberculosis">
+            <input name="tuberculosis.diagnosed" id="tuberculosis.diagnosed" type="checkbox" value="">
+            <span>Tuberculosis</span>
+        </fieldset>
+    </div>
+
+    <br/>
+    <div>
+        Please provide any other information or comments on your health, including medications and operations which have not been mentioned.
+        <input type="text" name="additionalInfomation_txt" min="140" max="210" id="height">
+    </div>
 </div>
 
 </body>

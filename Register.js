@@ -1,6 +1,7 @@
 function RegisterUser()
 {
     var name = document.getElementById("name").value;
+    var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var passwordConf = document.getElementById("passwordConf").value;
@@ -13,7 +14,24 @@ function RegisterUser()
 
     if(password === passwordConf)
     {
-        var user = {name:name, email:email, password:password, uid:uid, donor:donor, number:number};
-        RegisterJSON(user);
+        var user = {name:name, email:email, username:username ,password:password, uid:uid, donor:donor, number:number};
+        for (var member in user)
+        {
+            if (user[member] == null)
+            {
+                document.getElementById("error_lbl").innerText = "All fields must be complete to create a user";
+            }
+            else
+            {
+                if(RegisterJSON(user) === false)
+                {
+                    document.getElementById("error_lbl").innerText = "A user with this email already exists";
+                }
+            }
+        }
+    }
+    else
+    {
+        document.getElementById("error_lbl").innerText = "Passwords do not match";
     }
 }
