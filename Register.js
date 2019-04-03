@@ -23,8 +23,10 @@ function RegisterUser()
             }
             else
             {
-                RegisterJSON(user);
-
+                if(RegisterJSON(user) === false)
+                {
+                    document.getElementById("error_lbl").innerText = "A user with this username already exists";
+                }
             }
         }
     }
