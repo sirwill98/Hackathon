@@ -187,7 +187,7 @@ td {
     top: 1vh;
     width: 12%;
     height:7%;
-    text-align: center;
+    text-align: left;
 
 
 }
@@ -281,3 +281,27 @@ span.psw {
     margin-right:  5vw;
     margin-top : 5vw;
 }
+#previousMessages{
+
+}
+#message{
+    border:3px; border-style:solid; border-color:forestgreen; padding: 1em;
+}
+.messageLeft {
+    alignment: left;
+    color: red;
+}
+
+.messageRight {
+    position: absolute;
+    right: 0;
+    width: 15rem;
+}
+
+.infoCollapsible{
+    max-width: 100%;
+    background: #899c1c;
+    z-index: -1;
+}
+
+
