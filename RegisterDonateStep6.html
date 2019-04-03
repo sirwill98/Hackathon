@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
-    <link rel="apple-touch-icon" href="anlogo.jpeg" />
-    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
+    <link rel="icon" sizes="192x192" href="anlogo.jpeg"/>
+    <link rel="apple-touch-icon" href="anlogo.jpeg"/>
+    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon"/>
 
-    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <title>Register to Donate</title>
 
-    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+    <header>
+        <button class="collapsible">&nbsp;≡&nbsp;</button>
         <button class="account"><i class="fa fa-user"></i></button>
         &nbsp;&nbsp;Register to Donate
     </header>
@@ -24,8 +25,7 @@
 </head>
 <script type="text/javascript" src="RegisterDonate.js"></script>
 <script>
-    function main()
-    {
+    function main() {
 
     }
 </script>
@@ -33,9 +33,48 @@
 
 <div class="container" align="center">
     <label>Step 6 of 8</label>
+    <div>
+        <h4>It’s really important that we don’t lose touch.</h4>
+        We always need to be able to contact you in case you come up as a potential match. That’s why it’s so important
+        that you keep your details up to date, and that you provide us with an additional contact (friend or relative),
+        just in case.
 
+        We will only contact them if you came up as a match, and we can’t get in touch with you. We will never contact
+        this person for marketing or fundraising, and we will never pass on any of your personal details.
 
+        Please make sure this contact lives in the UK and doesn’t have the same address as you. We also ask that you
+        have, or will, let them know you’ve provided Anthony Nolan with their details and ensure that they are happy to
+        be contacted if we can’t get in touch with you.
+    </div>
+    <br/>
+
+    <div>
+        <h3>Your nominated contact details</h3>
+        <div id="ContactDetails" class="ContactDetails" align="center">
+            <div>
+                <label><b>First Name</b></label>
+                <input type="text" name="fName_txt" id="fName">
+                <label><b>Last Name</b></label>
+                <input type="text" name="lName_txt" id="lName">
+                <label><b>Email Address</b></label>
+                <input type="text" name="email_txt" id="email">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4>Phone Number</h4>
+        <div>
+            <input id="homePhoneNumber" type="text" value="" placeholder="Home Phone Number">
+        </div>
+        <div>
+            <input id="mobilePhoneNumber" type="text" value="" placeholder="Mobile Phone Number">
+        </div>
+        <div>
+            <input id="workPhoneNumber" type="text" value="" placeholder="Work Phone Number">
+        </div>
+    </div>
 </div>
-
+</div>
 </body>
 </html>
