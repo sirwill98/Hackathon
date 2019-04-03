@@ -24,6 +24,7 @@ header {
     position: fixed;
     background: linear-gradient(to right,#ddd ,#999);
     text-align: center;
+    z-index: 1;
 }
 footer{
     background-image: url("an-logo-horizontal.svg");
@@ -76,7 +77,7 @@ button:hover {
 .container {
     padding: 16px;
     margin: auto;
-    border: 3px solid #73AD21;
+    border: 3px solid #93aa1f;
 }
 
 span.psw {
@@ -85,12 +86,13 @@ span.psw {
 }
 
 .btn-group button {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
+    background-color: #899c1c; /* Green background */
+    border: 1px solid #525f11; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
+    z-index: 0;
 }
 
 /* Clear floats (clearfix hack) */
