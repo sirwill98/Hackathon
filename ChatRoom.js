@@ -72,7 +72,7 @@ function selectResponse(message){
     }
 
     if(!greetingResponse && !privacyResponse && !painResponse && !locationResponse){
-        messages.push(responses[3]);
+        messages.push(responses[4]);
         displayMessages();
     }
 }

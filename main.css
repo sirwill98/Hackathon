@@ -317,4 +317,9 @@ span.psw {
     width: 30vw;
 }
 
+#infoForm{
+    margin-top: 15vh;
+    visibility: hidden;
+}
+
 

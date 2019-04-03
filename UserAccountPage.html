@@ -21,11 +21,22 @@
 <header>
     <button class="collapsible">&nbsp;≡&nbsp;</button>
 
-    &nbsp;&nbsp;Anthony Nolan
+    <h1>&nbsp;&nbsp;Profile</h1>
 </header>
 <div class="container">
 <main>
     <div id="AccountInformation">
+        <div id="dropdownNav" class="dropdown">
+            <br>
+            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+            <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
+            <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+            <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+            <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
+            <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+            <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
+        </div>
+
         <div id="info">
             <h3 id="name">Name: </h3>
             <h4 id="age">Age: </h4>
@@ -34,9 +45,9 @@
             <h4 id="donor">Donor: </h4>
         </div>
         <div id="buttons">
-            <button id="edit" class="submit" style="left:35vw" onclick="editInfo()">Edit info</button>
+            <button id="edit" class="submit" style="margin-left:5vw" onclick="editInfo()">Edit info</button>
         </div>
-        <div id="infoForm" class="form">
+        <div id="infoForm" class="editinfo">
             <h3 id="infoFormTitle">Edit Info: </h3>
             <table>
                 <tr>
@@ -61,7 +72,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button id="updateInfo" class="submit" onclick="UpdateDetails()">Save</button>
+                        <button id="updateInfo" class="submit" style = "margin-left: 5vw"onclick="UpdateDetails()">Save</button>
                     </td>
                 </tr>
             </table>
