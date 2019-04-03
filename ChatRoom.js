@@ -2,15 +2,15 @@
 
 var messages = [];
 var responses = [
-    {id: "0", user: "user2", message: "Hello! How can I help?"},
-    {id: "1", user: "user2", message: "Don't worry all of our bone marrow transplants are done " +
+    {id: "0", user: "HelpBot", message: "Hello! How can I help?"},
+    {id: "1", user: "HelpBot", message: "Don't worry all of our bone marrow transplants are done " +
             "under general anesthetic so you won't feel anything during the procedure. " +
             "You may be a little sore afterwards but some paracetamol will sort you right out."},
-    {id: "2", user: "user2", message: "We will never sell or pass on your personal information " +
+    {id: "2", user: "HelpBot", message: "We will never sell or pass on your personal information " +
             "to third parties for their own marketing purposes."},
-    {id:"3", user:"user2", message: "While your stem cells may be used to help a patient anywhere" +
+    {id:"3", user:"HelpBot", message: "While your stem cells may be used to help a patient anywhere" +
             " in the world, the donations always take place in the UK."},
-    {id:"4", user: "user2", message: "I'm sorry I don't quite know what you mean. The answer might be" +
+    {id:"4", user: "HelpBot", message: "I'm sorry I don't quite know what you mean. The answer might be" +
             " in our FAQ section and if not you can try our website https://www.anthonynolan.org/ "}
 ];
 
