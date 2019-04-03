@@ -5,6 +5,43 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
+    <style>
+        .infoCollapsible {
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .infoCollapsible.active, .infoCollapsible:hover {
+            background-color: #555;
+        }
+
+        .infoCollapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .infoCollapsible.active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
     <link rel = "stylesheet" href = "main.css" />
     <link rel = "stylesheet" href = "toolkit.css" />
 
@@ -14,12 +51,16 @@
 </head>
 <body>
 <div id="fb-root"></div>
+
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+<title>Main</title>
 <header><button class="collapsible">&nbsp;≡&nbsp;</button>
     <button class="account"><i class="fa fa-user"></i></button>
 
     <h1>&nbsp;&nbsp;Home </h1></header>
 <main>
+    <div class="container">
+
     <div id="dropdown" class="dropdown">
         <br>
         <button class="sidebar"><i class="fa fa-home"></i>Home</button>
@@ -51,6 +92,7 @@
 
     <button class="infoCollapsible">We are Anthony Nolan</button>
     <div class="content">
+        <br>
         <p>Every day, we match incredible individuals willing to donate their blood stem cells or bone marrow to people with blood cancer and blood disorders who desperately need lifesaving transplants.</p>
         <p></p>
         <p>It all began in 1974. With her three-year-old son Anthony in urgent need of a bone marrow transplant, Shirley Nolan set up the world’s first register to match donors with people in desperate need.</p>
@@ -60,18 +102,19 @@
     </div>
     <button class="infoCollapsible">An extraordinary journey </button>
     <div class="content">
+        <br>
         <p>It all starts with someone being ready and waiting to help. And thanks to the generosity of our donors, the new mums, the great minds in our labs, and the selflessness of our supporters, it can end with someone’s life being saved.</p>
-        <table>
+        <table class="display-table">
             <tr>
-                <td style="padding: 0 15px">
+                <td style="padding: 0 10px">
                     <h2>720,000</h2>
                     <p>People on our UK register</p>
                 </td>
-                <td style="padding: 0 15px">
+                <td style="padding: 0 10px">
                     <h2>2,000</h2>
                     <p>People in the UK who need a match each year</p>
                 </td>
-                <td style="padding: 0 15px">
+                <td style="padding: 0 10px">
                     <h2>68,658</h2>
                     <p>Potential donors recruited last year</p>
                 </td>
@@ -80,8 +123,9 @@
     </div>
     <button class="infoCollapsible">Our Research</button>
     <div class="content">
+        <br>
         <p>We conduct world-class research into stem cell matching and transplants, so we can make sure every person in need gets the best possible treatment.</p>
-        <table>
+        <table class="display-table">
             <tr>
                 <td>
                     <img src="Images/infoImage2.jpg">
@@ -96,10 +140,15 @@
             </tr>
         </table>
     </div>
+        <br>
+    <div  class="fb-like" data-href="https://www.facebook.com/AnthonyNolan/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <br>
     <script type="text/javascript" src="Info.js"></script>
-    <a class="twitter-timeline" data-width="1200" data-height="800" data-theme="light" href="https://twitter.com/AnthonyNolan?ref_src=twsrc%5Etfw">Tweets by AnthonyNolan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="1200" data-height="800" data-theme="light" href="https://twitter.com/AnthonyNolan?ref_src=twsrc%5Etfw">Tweets by AnthonyNolan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
     <footer>
-        <div style="float: right" class="fb-like" data-href="https://www.facebook.com/AnthonyNolan/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        <br>
     </footer>
 </main>
 </body>

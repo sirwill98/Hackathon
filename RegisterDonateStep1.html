@@ -11,14 +11,16 @@
     <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
 
     <link rel = "stylesheet" href = "main.css" />
+    <link rel = "stylesheet" href = "toolkit.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
     <title>Register to Donate</title>
 
-    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
-        <button class="account"><i class="fa fa-user"></i></button>
-        &nbsp;&nbsp;Register to Donate
+    <header>
+
+
+        <h1>&nbsp;&nbsp;Register to Donate</h1>
     </header>
 
 </head>
@@ -58,8 +60,8 @@
         </div>
         <div id="Age" class="Age" align="center">
             <div class="btn-group">
-                <button onclick="DonateAgeYes()" id="AgeYes">Yes</button>
-                <button onclick="DonateAgeNo()" id="AgeNo">No</button>
+                <button class="btn-group" onclick="DonateAgeYes()" id="AgeYes">Yes</button>
+                <button class="btn-group" onclick="DonateAgeNo()" id="AgeNo">No</button>
             </div>
         </div>
 
@@ -79,8 +81,8 @@
 
         <div id="Location" class="Location" align="center">
             <div class="btn-group">
-                <button onclick="DonateLocationYes()" id="locationYes">Yes</button>
-                <button onclick="DonateLocationNo()" id="locationNo">No</button>
+                <button class="btn-group" onclick="DonateLocationYes()" id="locationYes">Yes</button>
+                <button class="btn-group" onclick="DonateLocationNo()" id="locationNo">No</button>
             </div>
         </div>
 
@@ -99,14 +101,17 @@
         </div>
         <div id="Attributes" class="Attributes" align="center">
             <div>
-                <input type="number" name="height_txt" min="140" max="210" id="height" placeholder="Height in CM">
+                <input  type="number" name="height_txt" min="140" max="210" id="height" placeholder="Height in CM">
                 <br/>
                 <input type="number" name="weight_txt" min="50" max="125" id="weight" placeholder="Weight in KG">
                 <br/>
-                <button onclick="ContinueToStep2()">Continue</button>
+                <div class="btn-group">
+                    <button style="width: 35vw"class="btn-group"onclick="ContinueToStep2()">Continue</button>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
+<footer><br></footer>
 </html>
