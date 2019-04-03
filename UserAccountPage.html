@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" href="UserAccountPage.css"/>
     <link rel="stylesheet" href="main.css"/>
+    <link rel = "stylesheet" href = "toolkit.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
@@ -16,11 +17,13 @@
 </head>
 <body onload="DisplayDetails()">
 
-<header><button class="collapsible">&nbsp;≡&nbsp;</button>
-    <button class="account" onclick="goToProfile()"><i class="fa fa-user"></i></button>
 
-    <h1>&nbsp;&nbsp;Home </h1></header>
+<header>
+    <button class="collapsible">&nbsp;≡&nbsp;</button>
 
+    &nbsp;&nbsp;Anthony Nolan
+</header>
+<div class="container">
 <main>
     <div id="AccountInformation">
         <div id="info">
@@ -31,7 +34,7 @@
             <h4 id="donor">Donor: </h4>
         </div>
         <div id="buttons">
-            <button id="edit" onclick="editInfo()">Edit info</button>
+            <button id="edit" class="submit" style="left:35vw" onclick="editInfo()">Edit info</button>
         </div>
         <div id="infoForm" class="form">
             <h3 id="infoFormTitle">Edit Info: </h3>
@@ -58,7 +61,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button id="updateInfo" onclick="UpdateDetails()">Save</button>
+                        <button id="updateInfo" class="submit" onclick="UpdateDetails()">Save</button>
                     </td>
                 </tr>
             </table>
@@ -68,17 +71,50 @@
     <button class="account"><i class="fa fa-user"></i></button>
 
     <div id="dropdown" class="dropdown">
-        <br>
-        <button class="sidebar"  onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
-        <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
-        <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
-        <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
-        <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
-        <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
-        <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-comments"></i>Chat</button>
+
+
+        <br><br>
+        <!--TODO socials-->
+
+        <button class="sidebar"><i class="fa fa-tint"></i>Blood Donor</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-info"></i> Info</button>
+
+        <br><br>
+
+        <button class="sidebar"><i class="fa fa-question-circle"></i>FAQ</button>
     </div>
 </main>
+</div>
+<script>
+    //collapsible menu
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content =document.getElementById("dropdown");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 <script type="text/javascript" src="main.js"></script>
 
