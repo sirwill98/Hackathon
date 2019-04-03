@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="main.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link rel="icon" sizes="192x192" href="anlogo.jpeg" />
-    <link rel="apple-touch-icon" href="anlogo.jpeg" />
-    <link rel="shortcut icon" href="anlogo.jpeg" type="image/x-icon" />
 
     <link rel = "stylesheet" href = "main.css" />
     <link rel = "stylesheet" href = "toolkit.css" />
@@ -47,6 +45,17 @@
 <body onload="main()">
 
     <div class="container" align="center">
+        <div id="dropdown" class="dropdown">
+            <br>
+            <button class="sidebar"><i class="fa fa-home"></i>Home</button>
+            <button class="sidebar" onclick="parent.location='RegisterDonateStep1.html'"><i class="fas fa-syringe"></i>Register to Donate</button>
+            <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+            <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+            <button class="sidebar" onclick="parent.location='Bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
+            <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+            <button class="sidebar" onclick="parent.location='ContactInfo.html'"><i class="fa fa-comment"></i>Contact Us</button>
+        </div>
+
         <label>Step 1 of 8</label>
 
         <div>
