@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Anthony Nolan - FAQ</title>
+
+    <style>
+        .infoCollapsible {
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .infoCollapsible.active, .infoCollapsible:hover {
+            background-color: #555;
+        }
+
+        .infoCollapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .infoCollapsible.active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+    <link rel = "stylesheet" href = "toolkit.css" />
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
+    <title>FAQs</title>
+    <header><button class="collapsible">&nbsp;≡&nbsp;</button>
+        <button class="account"><i class="fa fa-user"></i></button>
+
+        <h1>&nbsp;&nbsp;Journey - Bone Marrow Donations </h1></header>
+</head>
+<body>
+   <div>
+        <p><b>Donating through bone marrow</b></p>
+        <p>This is unlikely, but it's sometimes better for the patient</p>
+        <table class="infoTable">
+            <tr>
+                <td style="vertical-align:top">
+                    <b>1. Have some tests</b>
+                    <p>
+                        As with donating by blood, You go to a specialised hospital for some simple tests, we'll call to say the tests are fine, and then send you details about things like dates, hotels and
+                        transportation.
+                    </p>
+                </td>
+                <td style="vertical-align:top">
+                    <b>2. Go to the hospital</b>
+                    <p>
+                        You travel with your companion to the hospital. You stay in the hospital and your companion stays in a hotel. Don't
+                        worry about the cost - we'll pay for it all.
+                    </p>
+                </td>
+                <td style="vertical-align:top">
+                    <b>3. The big day</b>
+                    <p>
+                        In the morning, you'll be given a general anaesthetic. During a short procedure - about 30 minutes - you'll lie
+                        on your front and bone marrow is taken from your pelvic bone using a needle and syringe. You won't need
+                        stitches after the procedure but you'll have two plasters where the bone marrow was taken from. People think
+                        donating bone marrow is really painful, but donors tell us that it's not any worse than how you'd feel after
+                        a heavy workout in the gym
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top">
+                    <b>4. Stay overnight</b>
+                    <p>
+                        You wake up and you might feel a bit bruised where the needles were inserted. Your companion arrives and you
+                        spend the day and one more night in hospital recovering from the anaesthetic before going home the next day.
+                    </p>
+                </td>
+                <td style="vertical-align:top">
+                    <b>5. Get plenty of rest</b>
+                    <p>
+                        For the next few days you'll probably feel some pain where the needles were inserted, as well as general
+                        tiredness. Take some paracetamol and get some well-deserved rest. You'll soon be right as rain.
+                    </p>
+                </td>
+                <td style="vertical-align:top">
+                    <b>6. The difference it makes</b>
+                    <p>
+                        The stem cells you've donated will be used to give someone with blood cancer that most special gift - the chance
+                        of life. Well done! That makes you pretty fantastic.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="Info.js"></script>
+<div id="dropdown" class="dropdown">
+    <br>
+    <button class="sidebar" onclick="parent.location='index.html'"><i class="fa fa-home"></i>Home</button>
+
+    <button class="sidebar" onclick="parent.location='ChatRoom.html'"><i class="fa fa-comments"></i>Chat</button>
+
+
+    <!--TODO socials-->
+
+    <button class="sidebar" onclick="parent.location='Blood.html'"><i class="fa fa-tint"></i>Blood Donor</button>
+
+    <button class="sidebar" onclick="parent.location='bone.html'"><i class="fa fa-bone"></i>Bone Marrow</button>
+
+
+    <button class="sidebar" onclick="parent.location='FAQ.html'"><i class="fa fa-question-circle"></i>FAQ</button>
+
+
+</div>
+
+
+<script>
+    //collapsible menu
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content =document.getElementById("dropdown");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+
+</script>
+
+
+</body>
+<footer><br></footer>
+</html>
